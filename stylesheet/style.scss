@@ -1,0 +1,277 @@
+:root {
+    --sap-green : #58C6A1;
+    --dark-green : #2a8869;
+    --background-grey : #191b1f;
+    --grey : #ccc;
+    --off-white : rgb(248,248,255);
+
+}
+
+.light-mode {
+    * { 
+        color: var(--background-grey); 
+    }
+    background: bisque; 
+}
+
+* {
+    color: white;
+    font-family: 'MOntserrat', sans-serif;
+}
+
+body {
+    background-color: var(--background-grey);
+    padding: 10px 50px;
+}
+
+/* ------- CURSOR ------- */
+#cursor {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+    transition: 0.1s ease-in-out;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* ------- NAVIGATION BAR ------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+    span {
+        font-weight: 200;
+    }
+
+    .link-holder {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin-left: 30px;
+                color: red;
+
+                a {
+                    text-decoration:none;
+                    transition: 0.2s ease-in-out;
+
+                    &:hover {
+                        color: var(--sap-green);
+                    }
+                }
+            }
+        }
+
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+
+            .switch-theme-text {
+                font-weight: 200;
+                margin-left: 50px;
+            }
+
+            /* The switch - the box around the slider */
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 42px;
+                height: 24px;
+                margin-left: 10px;
+            }
+            
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+        
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 16px;
+                width: 16px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked + .slider {
+                background-color: white;
+                border: black solid 2px;
+            }
+
+            input:checked + .slider:before {
+                -webkit-transform: translate(16px, 2px);
+                -ms-transform: translate(16px, 2px);
+                transform: translate(16px, 2px);
+            }
+
+            /* Rounded sliders */
+            .slider {
+                border-radius: 16px;
+            }
+
+            input:checked + .slider:before {
+                background-color: black;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+/* ------- HERO SECTION ------- */
+.hero {
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div {
+        margin-top: 70px;
+
+        h1 { 
+            font-size: 2rem; 
+        }
+
+        p { 
+            font-size: 1rem; 
+        }
+
+        button {
+            height: 70px;
+            width: 230px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background: none;
+            border: 3px solid var(--sap-green);
+            border-radius: 35px;
+            margin-top: 60px;
+            margin: 60px auto;
+            transition: 0.3s ease-in-out;
+
+            .text {
+                font-size: 15px;
+                transition: 0.4s ease-in-out;
+            }
+
+            ion-icon {
+                color: var(--sap-green);
+                font-size: 60px;
+                margin-right: 5px;
+                transition: 0.4s ease-in-out;
+            }
+
+            &:hover {
+                border-color: cyan;
+
+                ion-icon {
+                    transform: translateX(155px);
+                    color: cyan;
+                }
+
+                .text {
+                    transform: translateX(-35px);
+                    color: cyan;
+                }
+
+                #cursor {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+/* ------- FLOATING SOCIAL ICONS ------- */
+.social-icons {
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    z-index: 5;
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        
+        li {
+            list-style: none;
+            margin-top: 30px;
+
+            a {
+                text-decoration: none;
+
+                ion-icon {
+                    font-size: 30px;
+                    transition: 0.2s ease-in-out;
+
+                    &:hover {
+                        color: var(--sap-green);
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+/* ------- RESPONSIVE CONSTRAINTS ------- */
+@media(max-width: 768px) {
+    body { padding: 10px; }
+    nav {
+        .link-holder {
+            ul {
+                display: none;
+            }
+        }
+    }
+    .social-icons {
+        right: 20px;
+    }
+}

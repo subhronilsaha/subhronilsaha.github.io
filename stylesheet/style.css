@@ -1,0 +1,338 @@
+:root {
+  --sap-green: #58C6A1;
+  --dark-green: #2a8869;
+  --background-grey: #191b1f;
+  --grey: #ccc;
+  --off-white: rgb(248,248,255);
+}
+
+.light-mode {
+  background: bisque;
+}
+
+.light-mode * {
+  color: var(--background-grey);
+}
+
+* {
+  color: white;
+  font-family: 'MOntserrat', sans-serif;
+}
+
+body {
+  background-color: var(--background-grey);
+  padding: 10px 50px;
+}
+
+/* ------- CURSOR ------- */
+#cursor {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-animation: pulse 1s linear infinite;
+          animation: pulse 1s linear infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* ------- NAVIGATION BAR ------- */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+
+nav span {
+  font-weight: 200;
+}
+
+nav .link-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .link-holder ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .link-holder ul li {
+  margin-left: 30px;
+  color: red;
+}
+
+nav .link-holder ul li a {
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+nav .link-holder ul li a:hover {
+  color: var(--sap-green);
+}
+
+nav .link-holder .toggle-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* The switch - the box around the slider */
+  /* Hide default HTML checkbox */
+  /* The slider */
+  /* Rounded sliders */
+}
+
+nav .link-holder .toggle-switch .switch-theme-text {
+  font-weight: 200;
+  margin-left: 50px;
+}
+
+nav .link-holder .toggle-switch .switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+nav .link-holder .toggle-switch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+nav .link-holder .toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+nav .link-holder .toggle-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+nav .link-holder .toggle-switch input:checked + .slider {
+  background-color: white;
+  border: black solid 2px;
+}
+
+nav .link-holder .toggle-switch input:checked + .slider:before {
+  -webkit-transform: translate(16px, 2px);
+  transform: translate(16px, 2px);
+}
+
+nav .link-holder .toggle-switch .slider {
+  border-radius: 16px;
+}
+
+nav .link-holder .toggle-switch input:checked + .slider:before {
+  background-color: black;
+}
+
+nav .link-holder .toggle-switch .slider.round:before {
+  border-radius: 50%;
+}
+
+/* ------- HERO SECTION ------- */
+.hero {
+  height: calc(100vh - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero div {
+  margin-top: 70px;
+}
+
+.hero div h1 {
+  font-size: 2rem;
+}
+
+.hero div p {
+  font-size: 1rem;
+}
+
+.hero div button {
+  height: 70px;
+  width: 230px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: none;
+  border: 3px solid var(--sap-green);
+  border-radius: 35px;
+  margin-top: 60px;
+  margin: 60px auto;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hero div button .text {
+  font-size: 15px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.hero div button ion-icon {
+  color: var(--sap-green);
+  font-size: 60px;
+  margin-right: 5px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.hero div button:hover {
+  border-color: cyan;
+}
+
+.hero div button:hover ion-icon {
+  -webkit-transform: translateX(155px);
+          transform: translateX(155px);
+  color: cyan;
+}
+
+.hero div button:hover .text {
+  -webkit-transform: translateX(-35px);
+          transform: translateX(-35px);
+  color: cyan;
+}
+
+.hero div button:hover #cursor {
+  height: 100px;
+  width: 100px;
+}
+
+/* ------- FLOATING SOCIAL ICONS ------- */
+.social-icons {
+  position: fixed;
+  right: 50px;
+  bottom: 10px;
+  z-index: 5;
+}
+
+.social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-icons ul li {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.social-icons ul li a {
+  text-decoration: none;
+}
+
+.social-icons ul li a ion-icon {
+  font-size: 30px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.social-icons ul li a ion-icon:hover {
+  color: var(--sap-green);
+}
+
+/* ------- RESPONSIVE CONSTRAINTS ------- */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  nav .link-holder ul {
+    display: none;
+  }
+  .social-icons {
+    right: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
