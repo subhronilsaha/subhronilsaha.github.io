@@ -85,7 +85,7 @@ body {
   display: flex;
   top: 0;
   left: 0;
-  background-color: #58C6A1;
+  background-color: #2a8869;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -94,6 +94,7 @@ body {
           align-items: center;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  z-index: -1;
 }
 
 #mobile-menu ul {
@@ -115,22 +116,6 @@ body {
   margin-bottom: 20px;
 }
 
-.toggle-hamburger .line:nth-child(1) {
-  opacity: 0;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-
-.toggle-hamburger .line:nth-child(3) {
-  opacity: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
-
-.toggle-hamburger #mobile-menu {
-  opacity: 1;
-}
-
 .hamburger {
   position: absolute;
   top: 20px;
@@ -148,8 +133,72 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.hamburger .line:nth-child(2) {
+  width: 25px;
+  margin-right: 0;
+}
+
 .hamburger:hover {
   cursor: pointer;
+}
+
+@-webkit-keyframes smallbig {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes smallbig {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.toggle-hamburger .hamburger {
+  -webkit-animation: smallbig 0.6s forwards;
+          animation: smallbig 0.6s forwards;
+}
+
+.toggle-hamburger .hamburger .line:nth-child(1), .toggle-hamburger .hamburger .line:nth-child(2), .toggle-hamburger .hamburger .line:nth-child(3) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.toggle-hamburger .hamburger .line:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-hamburger .hamburger .line:nth-child(1) {
+  -webkit-transform: translateY(7px) rotate(45deg);
+          transform: translateY(7px) rotate(45deg);
+}
+
+.toggle-hamburger .hamburger .line:nth-child(3) {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+          transform: translateY(-7px) rotate(-45deg);
+}
+
+.toggle-hamburger #mobile-menu {
+  opacity: 1;
+  z-index: 5;
 }
 
 /* ------- NAVIGATION BAR ------- */
