@@ -3,11 +3,13 @@
 <head>
 	<title>Subhronil Saha | Software dev</title>
 	<link rel="stylesheet" href="stylesheet/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Font: Noto Sans JS - 100, 400, 500, 700 -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body>	
 
+	<!-- Navigation Bar -->
 	<nav>
 		<span>Subhronil Saha</span>
 
@@ -64,6 +66,25 @@
 
 	<div id="cursor"></div>
 
+	<!------------------- Mobile Navigation Menu ------------------->
+	<section id="mobile-menu">
+		<ul>
+			<li><a href="/about">About</a></li>
+			<li><a href="/projects">Projects</a></li>
+			<li><a href="/resume">Resume</a></li>
+			<li><a href="blog.html">Blog</a></li>
+		</ul>
+	</section>
+
+	<!-- Hamburger Menu -->
+	<div class="hamburger" id="hamburger" onclick=hamburgerAnim()>
+		<span class="line" id="line1"></span>
+		<span class="line"></span>
+		<span class="line" id="line3"></span>
+	</div>
+
+	<!-- jQUERY CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 	<!-- GSAP -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 	<script src="js/animations/home-anim.js"></script>
@@ -71,6 +92,8 @@
 	<script src="js/theme.js"></script>
 	<!-- CURSOR -->
 	<script src="js/cursor.js"></script>
+	<!-- HAMBURGER CLICK -->
+	<script src="js/toggle-class.js"></script>
 	<!-- IONICONS -->
 	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
