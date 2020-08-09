@@ -116,6 +116,15 @@ body {
   margin-bottom: 20px;
 }
 
+#mobile-menu ul li a {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#mobile-menu ul li a:hover {
+  color: var(--background-grey);
+}
+
 .hamburger {
   position: absolute;
   top: 20px;
@@ -199,6 +208,10 @@ body {
 .toggle-hamburger #mobile-menu {
   opacity: 1;
   z-index: 5;
+}
+
+.toggle-hamburger .social-icons ion-icon:hover {
+  color: var(--background-grey);
 }
 
 /* ------- NAVIGATION BAR ------- */
@@ -332,35 +345,64 @@ nav .link-holder .toggle-switch .slider.round:before {
 }
 
 /* ------- HERO SECTION ------- */
-.hero {
+.hero-container {
   height: calc(100vh - 90px);
+  padding: 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
-.hero div {
-  margin-top: 70px;
-}
-
-.hero div h1 {
-  font-size: 2rem;
+.hero-container .hero h1 {
+  font-size: 3em;
   margin-bottom: 30px;
 }
 
-.hero div p {
-  font-size: 1rem;
-  margin-bottom: 60px;
+.hero-container .hero h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.hero div button {
+.hero-container .hero h4 {
+  font-size: 1.8em;
+  font-weight: 200;
+  margin: 10px 0;
+}
+
+.hero-container .hero .projects-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+.hero-container .hero .projects-link .gradient-border {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d53369), to(#daae51));
+  background: linear-gradient(#d53369 0%, #daae51 100%);
+  height: 110px;
+  width: 5px;
+  border-radius: 5px;
+}
+
+.hero-container .hero .projects-link .portfolio-div {
+  padding-left: 20px;
+}
+
+.hero-container .hero .projects-link .portfolio-div p {
+  font-size: 1rem;
+}
+
+.hero-container .hero .projects-link .portfolio-div button {
   height: 70px;
   width: 230px;
   position: relative;
@@ -370,24 +412,23 @@ nav .link-holder .toggle-switch .slider.round:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  margin-top: 20px;
   background: none;
   border: 3px solid var(--sap-green);
   border-radius: 35px;
-  margin: 60px auto;
+  margin: 20px 0 0 0;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.hero div button .text {
+.hero-container .hero .projects-link .portfolio-div button .text {
   font-size: 15px;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-.hero div button ion-icon {
+.hero-container .hero .projects-link .portfolio-div button ion-icon {
   color: var(--sap-green);
   font-size: 60px;
   margin-right: 5px;
@@ -395,23 +436,23 @@ nav .link-holder .toggle-switch .slider.round:before {
   transition: 0.4s ease-in-out;
 }
 
-.hero div button:hover {
+.hero-container .hero .projects-link .portfolio-div button:hover {
   border-color: cyan;
 }
 
-.hero div button:hover ion-icon {
-  -webkit-transform: translateX(155px);
-          transform: translateX(155px);
+.hero-container .hero .projects-link .portfolio-div button:hover ion-icon {
+  -webkit-transform: translateX(165px);
+          transform: translateX(165px);
   color: cyan;
 }
 
-.hero div button:hover .text {
+.hero-container .hero .projects-link .portfolio-div button:hover .text {
   -webkit-transform: translateX(-35px);
           transform: translateX(-35px);
   color: cyan;
 }
 
-.hero div button:hover #cursor {
+.hero-container .hero .projects-link .portfolio-div button:hover #cursor {
   height: 100px;
   width: 100px;
 }
@@ -466,6 +507,9 @@ nav .link-holder .toggle-switch .slider.round:before {
   }
   nav .link-holder .toggle-switch {
     display: none;
+  }
+  .hero {
+    padding: 0;
   }
   .social-icons {
     right: 20px;

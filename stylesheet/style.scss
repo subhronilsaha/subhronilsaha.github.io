@@ -77,6 +77,14 @@ body {
         li {
            font-size: 3em; 
            margin-bottom: 20px;
+        
+           a {
+               transition: 0.2s ease-in-out;
+           }
+
+           a:hover {
+               color: var(--background-grey);
+           }
         }
     }
 }
@@ -136,6 +144,12 @@ body {
     #mobile-menu {
         opacity: 1;
         z-index: 5;
+    }
+
+    .social-icons {
+        ion-icon:hover {
+            color: var(--background-grey);
+        }
     }
 }
 
@@ -252,67 +266,95 @@ nav {
 }
 
 /* ------- HERO SECTION ------- */
-.hero {
+.hero-container {
     height: calc(100vh - 90px);
+    padding: 0 100px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
 
-    div {
-        margin-top: 70px;
+    .hero {
 
         h1 { 
-            font-size: 2rem; 
+            font-size: 3em; 
             margin-bottom: 30px;
         }
 
-        p { 
-            font-size: 1rem;
-            margin-bottom: 60px; 
+        h2 {
+            font-size: 1.8em; 
+            font-weight: 400;
+            margin-bottom: 10px;
         }
 
-        button {
-            height: 70px;
-            width: 230px;
-            position: relative;
-            display: flex;
+        h4 {
+            font-size: 1.8em;
+            font-weight: 200;
+            margin: 10px 0; 
+        }
+
+        .projects-link {
+            display: flex; 
             align-items: center;
-            justify-content: flex-start;
-            background: none;
-            border: 3px solid var(--sap-green);
-            border-radius: 35px;
-            margin: 60px auto;
-            transition: 0.3s ease-in-out;
+            margin-top: 70px;
 
-            .text {
-                font-size: 15px;
-                transition: 0.4s ease-in-out;
+            .gradient-border {
+                background: linear-gradient(#d53369 0%, #daae51 100%);
+                height: 110px;
+                width: 5px;
+                border-radius: 5px;
             }
 
-            ion-icon {
-                color: var(--sap-green);
-                font-size: 60px;
-                margin-right: 5px;
-                transition: 0.4s ease-in-out;
-            }
+            .portfolio-div  {
+                padding-left: 20px;
 
-            &:hover {
-                border-color: cyan;
-
-                ion-icon {
-                    transform: translateX(155px);
-                    color: cyan;
+                p { 
+                    font-size: 1rem; 
                 }
-
-                .text {
-                    transform: translateX(-35px);
-                    color: cyan;
-                }
-
-                #cursor {
-                    height: 100px;
-                    width: 100px;
+        
+                button {
+                    height: 70px;
+                    width: 230px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    background: none;
+                    border: 3px solid var(--sap-green);
+                    border-radius: 35px;
+                    margin: 20px 0 0 0;
+                    transition: 0.3s ease-in-out;
+                    cursor: pointer;
+        
+                    .text {
+                        font-size: 15px;
+                        transition: 0.4s ease-in-out;
+                    }
+        
+                    ion-icon {
+                        color: var(--sap-green);
+                        font-size: 60px;
+                        margin-right: 5px;
+                        transition: 0.4s ease-in-out;
+                    }
+        
+                    &:hover {
+                        border-color: cyan;
+        
+                        ion-icon {
+                            transform: translateX(165px);
+                            color: cyan;
+                        }
+        
+                        .text {
+                            transform: translateX(-35px);
+                            color: cyan;
+                        }
+        
+                        #cursor {
+                            height: 100px;
+                            width: 100px;
+                        }
+                    }
                 }
             }
         }
@@ -365,6 +407,7 @@ nav {
             .toggle-switch { display: none; }
         }
     }
+    .hero { padding: 0; }
     .social-icons { right: 20px; }
     #cursor { display: none; }
 }
