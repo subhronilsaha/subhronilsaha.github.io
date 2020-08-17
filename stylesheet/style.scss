@@ -11,7 +11,7 @@
     * { 
         color: var(--background-grey); 
     }
-    background: bisque; 
+    background: #ADEAEA; 
 }
 
 * {
@@ -161,7 +161,15 @@ nav {
     height: 70px;
 
     span {
-        font-weight: 200;
+        a {
+            font-weight: 200;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: var(--sap-green);
+        }
     }
 
     .link-holder {
@@ -266,7 +274,7 @@ nav {
 }
 
 /* ------- HERO SECTION ------- */
-.hero-container {
+.container {
     height: calc(100vh - 90px);
     padding: 0 100px;
     display: flex;
@@ -299,7 +307,7 @@ nav {
 
             .gradient-border {
                 background: linear-gradient(#d53369 0%, #daae51 100%);
-                height: 110px;
+                height: 160px;
                 width: 5px;
                 border-radius: 5px;
             }
@@ -309,6 +317,14 @@ nav {
 
                 p { 
                     font-size: 1rem; 
+                    a {
+                        color: var(--sap-green);
+                        transition: 0.2s ease-in-out;
+
+                        &:hover {
+                            color: cyan;
+                        }
+                    }
                 }
         
                 button {
@@ -321,7 +337,7 @@ nav {
                     background: none;
                     border: 3px solid var(--sap-green);
                     border-radius: 35px;
-                    margin: 20px 0 0 0;
+                    margin: 20px 0 20px 0;
                     transition: 0.3s ease-in-out;
                     cursor: pointer;
         
@@ -356,6 +372,7 @@ nav {
                         }
                     }
                 }
+
             }
         }
     }
@@ -395,19 +412,38 @@ nav {
 
 /* ------- RESPONSIVE CONSTRAINTS ------- */
 @media (max-width: 768px) {
+    // Body
     body { 
         padding: 0 20px;
     }
+
+    // Mobile navigation
     .hamburger {
         .line { display: block; }
     }
+
+    // Main navigation
     nav {
         .link-holder {
             ul { display: none; }
             .toggle-switch { display: none; }
         }
     }
-    .hero { padding: 0; }
+
+    // Hero
+    .container { 
+        padding: 0; 
+
+        .hero {
+            h1 { font-size: 2.7em; }
+            h2 { font-size: 1.5em; }
+            h4 { font-size: 1.5em; }
+        }
+    }
+
+    // Social Icons
     .social-icons { right: 20px; }
+
+    // Cursor
     #cursor { display: none; }
 }

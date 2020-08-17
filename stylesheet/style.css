@@ -7,7 +7,7 @@
 }
 
 .light-mode {
-  background: bisque;
+  background: #ADEAEA;
 }
 
 .light-mode * {
@@ -228,8 +228,15 @@ nav {
   height: 70px;
 }
 
-nav span {
+nav span a {
   font-weight: 200;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+nav span a:hover {
+  color: var(--sap-green);
 }
 
 nav .link-holder {
@@ -345,7 +352,7 @@ nav .link-holder .toggle-switch .slider.round:before {
 }
 
 /* ------- HERO SECTION ------- */
-.hero-container {
+.container {
   height: calc(100vh - 90px);
   padding: 0 100px;
   display: -webkit-box;
@@ -359,24 +366,24 @@ nav .link-holder .toggle-switch .slider.round:before {
           align-items: center;
 }
 
-.hero-container .hero h1 {
+.container .hero h1 {
   font-size: 3em;
   margin-bottom: 30px;
 }
 
-.hero-container .hero h2 {
+.container .hero h2 {
   font-size: 1.8em;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-.hero-container .hero h4 {
+.container .hero h4 {
   font-size: 1.8em;
   font-weight: 200;
   margin: 10px 0;
 }
 
-.hero-container .hero .projects-link {
+.container .hero .projects-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,23 +393,33 @@ nav .link-holder .toggle-switch .slider.round:before {
   margin-top: 70px;
 }
 
-.hero-container .hero .projects-link .gradient-border {
+.container .hero .projects-link .gradient-border {
   background: -webkit-gradient(linear, left top, left bottom, from(#d53369), to(#daae51));
   background: linear-gradient(#d53369 0%, #daae51 100%);
-  height: 110px;
+  height: 160px;
   width: 5px;
   border-radius: 5px;
 }
 
-.hero-container .hero .projects-link .portfolio-div {
+.container .hero .projects-link .portfolio-div {
   padding-left: 20px;
 }
 
-.hero-container .hero .projects-link .portfolio-div p {
+.container .hero .projects-link .portfolio-div p {
   font-size: 1rem;
 }
 
-.hero-container .hero .projects-link .portfolio-div button {
+.container .hero .projects-link .portfolio-div p a {
+  color: var(--sap-green);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container .hero .projects-link .portfolio-div p a:hover {
+  color: cyan;
+}
+
+.container .hero .projects-link .portfolio-div button {
   height: 70px;
   width: 230px;
   position: relative;
@@ -416,19 +433,19 @@ nav .link-holder .toggle-switch .slider.round:before {
   background: none;
   border: 3px solid var(--sap-green);
   border-radius: 35px;
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.hero-container .hero .projects-link .portfolio-div button .text {
+.container .hero .projects-link .portfolio-div button .text {
   font-size: 15px;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-.hero-container .hero .projects-link .portfolio-div button ion-icon {
+.container .hero .projects-link .portfolio-div button ion-icon {
   color: var(--sap-green);
   font-size: 60px;
   margin-right: 5px;
@@ -436,23 +453,23 @@ nav .link-holder .toggle-switch .slider.round:before {
   transition: 0.4s ease-in-out;
 }
 
-.hero-container .hero .projects-link .portfolio-div button:hover {
+.container .hero .projects-link .portfolio-div button:hover {
   border-color: cyan;
 }
 
-.hero-container .hero .projects-link .portfolio-div button:hover ion-icon {
+.container .hero .projects-link .portfolio-div button:hover ion-icon {
   -webkit-transform: translateX(165px);
           transform: translateX(165px);
   color: cyan;
 }
 
-.hero-container .hero .projects-link .portfolio-div button:hover .text {
+.container .hero .projects-link .portfolio-div button:hover .text {
   -webkit-transform: translateX(-35px);
           transform: translateX(-35px);
   color: cyan;
 }
 
-.hero-container .hero .projects-link .portfolio-div button:hover #cursor {
+.container .hero .projects-link .portfolio-div button:hover #cursor {
   height: 100px;
   width: 100px;
 }
@@ -508,8 +525,17 @@ nav .link-holder .toggle-switch .slider.round:before {
   nav .link-holder .toggle-switch {
     display: none;
   }
-  .hero {
+  .container {
     padding: 0;
+  }
+  .container .hero h1 {
+    font-size: 2.7em;
+  }
+  .container .hero h2 {
+    font-size: 1.5em;
+  }
+  .container .hero h4 {
+    font-size: 1.5em;
   }
   .social-icons {
     right: 20px;
