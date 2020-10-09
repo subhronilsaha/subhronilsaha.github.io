@@ -271,6 +271,12 @@ nav .link-holder ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container .hero {
@@ -353,7 +359,8 @@ nav .link-holder ul li a:hover {
     display: none;
   }
   .container {
-    margin: 0 10px;
+    padding: 30px 0;
+    margin: 0;
   }
   #cursor {
     display: none;
