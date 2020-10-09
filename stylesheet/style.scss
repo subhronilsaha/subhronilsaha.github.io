@@ -2,7 +2,8 @@
     --sap-green : #58C6A1;
     --dark-green : #2a8869;
     --background : #F7FAFD;
-    --primaryBlue: #4082EA;
+    --primaryBlue : #4082EA;
+    --primaryYellow : #f9f97c;
     --grey : #707070;
 }
 
@@ -53,7 +54,7 @@ body {
     display: flex;
     top: 0;
     left: 0;
-    background-color: #2a8869;
+    background-color: var(--primaryYellow);
     justify-content: center;
     align-items: center;
     transition: all 0.4s ease-in-out;
@@ -74,7 +75,7 @@ body {
            }
 
            a:hover {
-               color: var(--background);
+               color: var(--primaryBlue);
            }
         }
     }
