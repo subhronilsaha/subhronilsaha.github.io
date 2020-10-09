@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Font: Montserrat - 100, 400, 500, 700 -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 <body>	
 
@@ -25,36 +26,57 @@
 				<li><a href="/resume">Resume</a></li>
 				<li><a href="blog.html">Blog</a></li>
 			</ul>
-
-			<!-- Theme toggle switch -->
-			<div class="toggle-switch">
-				<div class="switch-theme-text">Toggle Theme</div>
-				<label class="switch">
-					<input type="checkbox" onclick=myFunction()>
-					<span class="slider round"></span>
-				</label>
-			</div>
 		</div>
 	</nav>
 
 	<!-- ---------------------- HERO SECTION ---------------------- -->
 	<section class="container">
 		<div class="hero">
-			<div class="intro-text">
-				<h2>This is</h2>
-				<h1>Subhronil Saha</h1>
-				<h4>I'm a Software Developer. </h4>
-			</div>
-			<div class="projects-link">
-				<div class="gradient-border" id="gradient-border"></div>
-				<div class="portfolio-div">
-					<p>Welcome to my portfolio </p>
-					<button id="go-to-projects">
-						<ion-icon name="chevron-forward-circle-outline"></ion-icon>
-						<span class="text">Explore Projects</span>
-					</button>
-					<p>or <a href="/about">Learn more about me >> </a> </p>
-				</div>
+			<img class="profile-img" src="assets/profile-image.jpg" alt="profile-image">
+			<h1> <span style="color: #4082EA;">Subhronil</span> Saha</h1>
+			<h4>Fullstack Web and iOS Developer</h4>
+			<p>	I am a software developer with experience building web applications in the
+				MERN stack and native iOS applications in Swift. I am currently a Junior studying 
+				Computer Science at UEM, Kolkata. 
+			</p>
+			<!-- Social Icons -->
+			<div class="social-icons">
+				<ul>
+					<li class="social-icon">
+						<a href="mailto:subhronilsaha26@gmail.com">
+							<ion-icon style="color:#fe2c54;" name="mail-outline"></ion-icon>
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="https://github.com/subhronilsaha">
+							<ion-icon style="color:#191919;" name="logo-github"></ion-icon>
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="https://twitter.com/SubhronilSaha">
+							<ion-icon style="color:#00acee;" name="logo-twitter"></ion-icon>
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="https://linkedin.com/in/subhronil-saha">
+							<ion-icon style="color:#0e76a8;" name="logo-linkedin"></ion-icon>
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="https://behance.com/subhronilsaha">
+							<ion-icon style="color:#053eff;" name="logo-behance"></ion-icon>
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="https://hackerrank.com/subhronilsaha26">
+							<img 
+								width="30px"
+								src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png" 
+								alt="hackerrank"
+							>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</section>
@@ -78,26 +100,7 @@
 		<span class="line" id="line3"></span>
 	</div>
 
-	<!-- Social Icons -->
-	<div class="social-icons">
-		<ul>
-			<li class="social-icon">
-				<a href="mailto:subhronilsaha26@gmail.com">
-					<ion-icon name="mail-outline"></ion-icon>
-				</a>
-			</li>
-			<li class="social-icon">
-				<a href="https://github.com/subhronilsaha">
-					<ion-icon name="logo-github"></ion-icon>
-				</a>
-			</li>
-			<li class="social-icon">
-				<a href="https://github.com/subhronilsaha">
-					<ion-icon name="logo-twitter"></ion-icon>
-				</a>
-			</li>
-		</ul>
-	</div>
+	
 
 	<!-- ---------------------- SCRIPTS ---------------------- -->
 
@@ -105,7 +108,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 	<!-- GSAP -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-	<script src="js/animations/home-anim.js"></script>
+	<!-- <script src="js/animations/home-anim.js"></script> -->
 	<!-- THEMES -->
 	<script src="js/theme.js"></script>
 	<!-- CURSOR -->

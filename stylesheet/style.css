@@ -1,28 +1,20 @@
 :root {
   --sap-green: #58C6A1;
   --dark-green: #2a8869;
-  --background-grey: #191b1f;
-  --grey: #ccc;
-  --off-white: rgb(248,248,255);
-}
-
-.light-mode {
-  background: #ADEAEA;
-}
-
-.light-mode * {
-  color: var(--background-grey);
+  --background: #F7FAFD;
+  --primaryBlue: #4082EA;
+  --grey: #707070;
 }
 
 * {
-  color: white;
-  font-family: 'MOntserrat', sans-serif;
+  color: var(--grey);
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: var(--background-grey);
+  background-color: var(--background);
   padding: 10px 50px;
 }
 
@@ -37,7 +29,7 @@ body {
   transition: 0.1s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  border: 1px solid white;
+  border: 1px solid var(--sap-green);
   border-radius: 50%;
   pointer-events: none;
   -webkit-animation: pulse 1s linear infinite;
@@ -122,7 +114,7 @@ body {
 }
 
 #mobile-menu ul li a:hover {
-  color: var(--background-grey);
+  color: var(--background);
 }
 
 .hamburger {
@@ -135,7 +127,7 @@ body {
 .hamburger .line {
   width: 30px;
   height: 2px;
-  background-color: #ecf0f1;
+  background-color: var(--grey);
   display: none;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -211,7 +203,7 @@ body {
 }
 
 .toggle-hamburger .social-icons ion-icon:hover {
-  color: var(--background-grey);
+  color: var(--background);
 }
 
 /* ------- NAVIGATION BAR ------- */
@@ -229,14 +221,14 @@ nav {
 }
 
 nav span a {
-  font-weight: 200;
+  font-weight: 400;
   text-decoration: none;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 nav span a:hover {
-  color: var(--sap-green);
+  color: var(--primaryBlue);
 }
 
 nav .link-holder {
@@ -260,7 +252,6 @@ nav .link-holder ul {
 
 nav .link-holder ul li {
   margin-left: 30px;
-  color: red;
 }
 
 nav .link-holder ul li a {
@@ -270,219 +261,19 @@ nav .link-holder ul li a {
 }
 
 nav .link-holder ul li a:hover {
-  color: var(--sap-green);
-}
-
-nav .link-holder .toggle-switch {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* The switch - the box around the slider */
-  /* Hide default HTML checkbox */
-  /* The slider */
-  /* Rounded sliders */
-}
-
-nav .link-holder .toggle-switch .switch-theme-text {
-  font-weight: 200;
-  margin-left: 50px;
-}
-
-nav .link-holder .toggle-switch .switch {
-  position: relative;
-  display: inline-block;
-  width: 42px;
-  height: 24px;
-  margin-left: 10px;
-}
-
-nav .link-holder .toggle-switch .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-nav .link-holder .toggle-switch .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-nav .link-holder .toggle-switch .slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-nav .link-holder .toggle-switch input:checked + .slider {
-  background-color: white;
-  border: black solid 2px;
-}
-
-nav .link-holder .toggle-switch input:checked + .slider:before {
-  -webkit-transform: translate(16px, 2px);
-  transform: translate(16px, 2px);
-}
-
-nav .link-holder .toggle-switch .slider {
-  border-radius: 16px;
-}
-
-nav .link-holder .toggle-switch input:checked + .slider:before {
-  background-color: black;
-}
-
-nav .link-holder .toggle-switch .slider.round:before {
-  border-radius: 50%;
+  color: var(--primaryBlue);
 }
 
 /* ------- HERO SECTION ------- */
 .container {
   height: calc(100vh - 90px);
-  padding: 0 100px;
+  margin: 0 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.container .hero h1 {
-  font-size: 3em;
-  margin-bottom: 30px;
-}
-
-.container .hero h2 {
-  font-size: 1.8em;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.container .hero h4 {
-  font-size: 1.8em;
-  font-weight: 200;
-  margin: 10px 0;
-}
-
-.container .hero .projects-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 70px;
-}
-
-.container .hero .projects-link .gradient-border {
-  background: -webkit-gradient(linear, left top, left bottom, from(#d53369), to(#daae51));
-  background: linear-gradient(#d53369 0%, #daae51 100%);
-  height: 160px;
-  width: 5px;
-  border-radius: 5px;
-}
-
-.container .hero .projects-link .portfolio-div {
-  padding-left: 20px;
-}
-
-.container .hero .projects-link .portfolio-div p {
-  font-size: 1rem;
-}
-
-.container .hero .projects-link .portfolio-div p a {
-  color: var(--sap-green);
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.container .hero .projects-link .portfolio-div p a:hover {
-  color: cyan;
-}
-
-.container .hero .projects-link .portfolio-div button {
-  height: 70px;
-  width: 230px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
-  background: none;
-  border: 3px solid var(--sap-green);
-  border-radius: 35px;
-  margin: 20px 0 20px 0;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.container .hero .projects-link .portfolio-div button .text {
-  font-size: 15px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.container .hero .projects-link .portfolio-div button ion-icon {
-  color: var(--sap-green);
-  font-size: 60px;
-  margin-right: 5px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.container .hero .projects-link .portfolio-div button:hover {
-  border-color: cyan;
-}
-
-.container .hero .projects-link .portfolio-div button:hover ion-icon {
-  -webkit-transform: translateX(165px);
-          transform: translateX(165px);
-  color: cyan;
-}
-
-.container .hero .projects-link .portfolio-div button:hover .text {
-  -webkit-transform: translateX(-35px);
-          transform: translateX(-35px);
-  color: cyan;
-}
-
-.container .hero .projects-link .portfolio-div button:hover #cursor {
-  height: 100px;
-  width: 100px;
-}
-
-/* ------- FLOATING SOCIAL ICONS ------- */
-.social-icons {
-  position: fixed;
-  right: 50px;
-  bottom: 10px;
-  z-index: 5;
-}
-
-.social-icons ul {
+.container .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,25 +281,64 @@ nav .link-holder .toggle-switch .slider.round:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-.social-icons ul li {
+.container .hero .profile-img {
+  border-radius: 100%;
+  margin-bottom: 40px;
+}
+
+.container .hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.container .hero h4 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.container .hero p {
+  font-size: 1.2em;
+  margin-bottom: 60px;
+}
+
+.container .hero .social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .hero .social-icons ul li {
   list-style: none;
-  margin-top: 30px;
+  margin: 0 10px;
 }
 
-.social-icons ul li a {
+.container .hero .social-icons ul li a {
   text-decoration: none;
 }
 
-.social-icons ul li a ion-icon {
+.container .hero .social-icons ul li a ion-icon, .container .hero .social-icons ul li a img {
   font-size: 30px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
-.social-icons ul li a ion-icon:hover {
-  color: var(--sap-green);
+.container .hero .social-icons ul li a ion-icon:hover, .container .hero .social-icons ul li a img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* ------- RESPONSIVE CONSTRAINTS ------- */
@@ -522,23 +352,8 @@ nav .link-holder .toggle-switch .slider.round:before {
   nav .link-holder ul {
     display: none;
   }
-  nav .link-holder .toggle-switch {
-    display: none;
-  }
   .container {
-    padding: 0;
-  }
-  .container .hero h1 {
-    font-size: 2.7em;
-  }
-  .container .hero h2 {
-    font-size: 1.5em;
-  }
-  .container .hero h4 {
-    font-size: 1.5em;
-  }
-  .social-icons {
-    right: 20px;
+    margin: 0 10px;
   }
   #cursor {
     display: none;
