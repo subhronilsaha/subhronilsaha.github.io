@@ -1,14 +1,16 @@
 :root {
   --sap-green: #58C6A1;
   --dark-green: #2a8869;
-  --background: #F7FAFD;
+  --white: #d9e8f7;
   --primaryBlue: #4082EA;
   --primaryYellow: #f9f97c;
+  --primaryPurple: #5944C7;
+  --lightPurple: #6648ff;
+  --primaryPink: #DD5D98;
   --grey: #707070;
 }
 
 * {
-  color: var(--grey);
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
@@ -21,6 +23,7 @@ html {
 }
 
 body {
+  color: var(--grey);
   background-color: var(--background);
 }
 
@@ -97,7 +100,7 @@ body p {
 .hamburger .line {
   width: 30px;
   height: 2px;
-  background-color: var(--grey);
+  background-color: var(--white);
   display: none;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -172,10 +175,6 @@ body p {
   z-index: 5;
 }
 
-.toggle-hamburger .social-icons ion-icon:hover {
-  color: var(--background);
-}
-
 /* ------- NAVIGATION BAR ------- */
 nav {
   display: -webkit-box;
@@ -192,6 +191,7 @@ nav {
 }
 
 nav span a {
+  color: var(--white);
   font-weight: 400;
   text-decoration: none;
   -webkit-transition: 0.3s ease-in-out;
@@ -199,7 +199,7 @@ nav span a {
 }
 
 nav span a:hover {
-  color: var(--primaryBlue);
+  color: var(--primaryPink);
 }
 
 nav .link-holder {
@@ -226,6 +226,7 @@ nav .link-holder ul li {
 }
 
 nav .link-holder ul li a {
+  color: var(--white);
   text-decoration: none;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -233,20 +234,21 @@ nav .link-holder ul li a {
 }
 
 nav .link-holder ul li a:hover {
-  color: var(--primaryBlue);
+  color: var(--primaryYellow);
 }
 
 /* ------- MAIN ------- */
+.hero-and-nav {
+  background-image: url(/assets/hero-bg-01.png);
+  background-size: cover;
+}
+
 .container {
   height: 100%;
   padding: 50px 20%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.container:nth-child(even) {
-  background-color: #E8EFF6;
 }
 
 /* ------- HERO ------- */
@@ -265,10 +267,16 @@ nav .link-holder ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  min-height: 80vh;
+  color: var(--white);
 }
 
 .hero .profile-img {
   height: 160px;
+  border: 3px solid transparent;
+  -o-border-image: linear-gradient(to right, green, lightgreen);
+     border-image: -webkit-gradient(linear, left top, right top, from(green), to(lightgreen));
+     border-image: linear-gradient(to right, green, lightgreen);
   border-radius: 100%;
   margin-bottom: 30px;
 }

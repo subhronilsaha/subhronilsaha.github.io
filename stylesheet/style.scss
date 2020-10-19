@@ -1,14 +1,16 @@
 :root {
     --sap-green : #58C6A1;
     --dark-green : #2a8869;
-    --background : #F7FAFD;
+    --white : #d9e8f7;
     --primaryBlue : #4082EA;
     --primaryYellow : #f9f97c;
+    --primaryPurple : #5944C7;
+    --lightPurple : #6648ff;
+    --primaryPink : #DD5D98;
     --grey : #707070;
 }
 
 * {
-    color: var(--grey);
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
@@ -20,6 +22,7 @@ html {
 }
 
 body {
+    color: var(--grey);
     background-color: var(--background);
 
     h1 { font-size: 2.5em; }
@@ -98,7 +101,7 @@ body {
     .line {
         width: 30px;
         height: 2px;
-        background-color: var(--grey);
+        background-color: var(--white);
         display: none;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
@@ -145,12 +148,6 @@ body {
         opacity: 1;
         z-index: 5;
     }
-
-    .social-icons {
-        ion-icon:hover {
-            color: var(--background);
-        }
-    }
 }
 
 /* ------- NAVIGATION BAR ------- */
@@ -163,13 +160,14 @@ nav {
 
     span {
         a {
+            color: var(--white);
             font-weight: 400;
             text-decoration: none;
             transition: 0.3s ease-in-out;
         }
 
         a:hover {
-            color: var(--primaryBlue);
+            color: var(--primaryPink);
         }
     }
 
@@ -186,12 +184,13 @@ nav {
                 margin-left: 30px;
 
                 a {
+                    color: var(--white);
                     text-decoration:none;
                     transition: 0.2s ease-in-out;
                     font-weight: 500;
 
                     &:hover {
-                        color: var(--primaryBlue);
+                        color: var(--primaryYellow);
                     }
                 }
             }
@@ -200,14 +199,16 @@ nav {
 }
 
 /* ------- MAIN ------- */
+.hero-and-nav {
+    background-image: url(/assets/hero-bg-01.png);
+    background-size: cover;
+}
+
 .container {
     height: 100%;
     padding: 50px 20%;
     align-items: center;
 
-    &:nth-child(even) {
-        background-color: #E8EFF6;
-    }
 }
 
 /* ------- HERO ------- */
@@ -217,9 +218,13 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: 80vh;
+    color: var(--white);
 
     .profile-img {
         height: 160px;
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right, green, lightgreen);
         border-radius: 100%;
         margin-bottom: 30px;
     }
