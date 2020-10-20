@@ -110,12 +110,13 @@
 	<!-- ----------------------  ABOUT SECTION ---------------------- -->
 	<section class="container about">
 		<div id="about">
-			<h1 style="display: flex; align-items: center;"> 
-				<ion-icon style="margin-right: 10px;" name="person-outline"></ion-icon> 
-				About Me
-			</h1>
 			<div class="row">
 				<div class="col" style="margin-right: 20px; margin-bottom: 20px;">
+					<h1 style="display: flex; align-items: center;"> 
+						<ion-icon style="margin-right: 10px;" name="person-outline"></ion-icon> 
+						About Me
+					</h1>
+
 					<button class="about-active" id="about-btn-1"> 
 						<p>Overview</p>
 					</button>
@@ -187,7 +188,7 @@
 					<img
 						src="assets/me-working.JPG" 
 						alt="working-on-xcode"
-						width="250px"
+						width="350px"
 						style="border-radius: 10px;"
 					>
 				</div>
@@ -196,13 +197,99 @@
 	</section>
 
 	<!-- ----------------------  PROJECTS SECTION ---------------------- -->
-	<section class="container">
+	<section class="container projects">
 		<div id="projects">
-			<h1>Projects Showcase</h1>
+			<h1 style="display: flex; align-items: center;"> 
+				<ion-icon style="margin-right: 10px;" name="hammer-outline"></ion-icon> 
+				Projects
+			</h1>
+
 			<div class="row">
-				<div>
-					
+				<!-- FIRECHAT -->
+				<div class="card">
+					<img 
+						src="/assets/mockup-firechat/Firechat-mockup.png" 
+						alt=""
+						width="100%"
+					>
+					<div class="card-desc">
+						<h2 style="color: #fe2c54;">Firechat</h2>
+						<h3>iOS</h3>
+						Firechat is a cloud based messaging service for iOS, which stores and fetches data from the Firebase servers. User authentication and Media storage are also being handled by Firebase.
+						<br> <br>
+						Github: <a href="https://github.com/subhronilsaha/Firechat">github.com/subhronilsaha/Firechat</a> 
+						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
+							<div class="skill">Swift 5</div>
+							<div class="skill">UIKit</div>
+							<div class="skill">Firebase</div>
+						</div>	
+					</div>
 				</div>
+
+				<!-- WWDC -->
+				<div class="card">
+					<img 
+						src="/assets/mockup-wwdc20/screen-1.png" 
+						alt=""
+						width="100%"
+					>
+					<div class="card-desc">
+						<h2 style="color: #192548;">Morse Code</h2>
+						<h3>Swift Playground</h3>
+						Morse Code is a Playground Book that teaches you morse code. I built it for WWDC 2020 Swift Student Challenge.  
+						<br> <br>
+						Github: <a href="https://github.com/subhronilsaha/wwdc20-submission">github.com/subhronilsaha/wwdc20-submission</a>
+						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
+							<div class="skill">Swift Playground</div>
+							<div class="skill">SwiftUI</div>
+						</div>	
+					</div>
+				</div>
+
+				<!-- Face Detect -->
+				<div class="card">
+					<img 
+						src="/assets/mockup-face-detect/screen-1.png" 
+						alt=""
+						width="100%"
+					>
+					<div class="card-desc">
+						<h2 style="color: #192548;">Face Detect</h2>
+						<h3>Web</h3>
+						Face Detect is a web based face detection visualiser, using Clarif.ai face detection model API. Frontend is built with React, and authentication is handled using a Node/Express server and Postgres database. 
+						<br> <br>
+						Github: <a href="https://github.com/subhronilsaha/wwdc20-submission">github.com/subhronilsaha/wwdc20-submission</a>
+						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
+							<div class="skill">React</div>
+							<div class="skill">Node.js</div>
+							<div class="skill">Express</div>
+							<div class="skill">PostgreSQL</div>
+							<div class="skill">Clarif.ai</div>
+						</div>	
+					</div>
+				</div>
+
+				<!-- Treefam -->
+				<div class="card">
+					<img 
+						src="/assets/mockup-treefam/screen-1.png" 
+						alt=""
+						width="100%"
+					>
+					<div class="card-desc">
+						<h2 style="color: #192548;">TreeFam</h2>
+						<h3>Web</h3>
+						Treefam is a social network for nature lovers. Users plant trees, and get 'climate points', and compete with their friends. They also get to see where their friends are planting trees. Built during Ivy Hacks 2020 (Ivy League Hackathon).
+						<br> <br>
+						Github: <a href="https://github.com/subhronilsaha/ivyhacks-submission">github.com/subhronilsaha/ivyhacks-submission</a>
+						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
+							<div class="skill">React</div>
+							<div class="skill">Firebase</div>
+							<div class="skill">Google Maps API</div>
+						</div>	
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</section>
@@ -238,7 +325,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 	<!-- GSAP -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-	<script src="js/animations/home-anim.js"></script>
+	<!-- <script src="js/animations/home-anim.js"></script> -->
 	<!-- HAMBURGER CLICK -->
 	<script src="js/animations/hamburger.js"></script>
 	<!-- Custom Javascript -->

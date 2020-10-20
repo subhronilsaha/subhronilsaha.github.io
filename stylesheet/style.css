@@ -467,12 +467,12 @@ nav .link-holder ul li a:hover {
   font-size: 1.1em;
 }
 
-#about .row #div-2 .skill {
+.skill {
   color: var(--primaryPurple);
   padding: 5px 10px;
   border: 2px solid var(--primaryPurple);
   border-radius: 10px;
-  margin: 5px 10px 15px 0;
+  margin: 5px 10px 5px 0;
 }
 
 .about-active {
@@ -484,7 +484,59 @@ nav .link-holder ul li a:hover {
   color: white;
 }
 
-/* ------- ABOUT ------- */
+/* ------- PROJECTS ------- */
+.projects {
+  background-color: aliceblue;
+}
+
+#projects h1 {
+  margin-bottom: 40px;
+}
+
+#projects .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#projects .card {
+  width: 45%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#projects .card img {
+  border-radius: 15px;
+}
+
+#projects .card .card-desc {
+  padding: 15px 15px 15px 15px;
+  -webkit-box-shadow: grey 2px 3px;
+          box-shadow: grey 2px 3px;
+  border-radius: 15px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#projects .card .card-desc h3 {
+  margin-bottom: 10px;
+}
+
+#projects .card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+#projects .card:hover .card-desc {
+  background-color: whitesmoke;
+}
+
+/* ------- FOOTER ------- */
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,6 +575,9 @@ nav .link-holder ul li a:hover {
             flex-direction: column;
   }
   .container #about .row img {
+    width: 100%;
+  }
+  .container #projects .card {
     width: 100%;
   }
 }
