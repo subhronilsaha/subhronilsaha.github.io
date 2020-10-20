@@ -163,11 +163,11 @@ nav {
             color: var(--white);
             font-weight: 400;
             text-decoration: none;
-            transition: 0.3s ease-in-out;
+            transition: 0.1s ease-in-out;
         }
 
         a:hover {
-            color: var(--primaryPink);
+            color: var(--lightPurple);
         }
     }
 
@@ -208,7 +208,6 @@ nav {
     height: 100%;
     padding: 50px 20%;
     align-items: center;
-
 }
 
 /* ------- HERO ------- */
@@ -236,7 +235,32 @@ nav {
         margin-bottom: 40px;
     }
     
-    p { margin-bottom: 60px; }
+    p { margin-bottom: 40px; }
+
+    button {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 2px solid white;
+        color: white;
+        background: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        margin-bottom: 40px;
+
+        ion-icon {
+            font-size: 20px;
+            margin-left: 5px;
+        }
+
+        &:hover {
+            color: var(--primaryYellow);
+            border-color: var(--primaryYellow);
+            transform: scale(1.05);
+        }
+    }
 
     .social-icons {
         ul {
@@ -265,16 +289,17 @@ nav {
 }
 
 /* ------- ABOUT ------- */
+.about {
+    background-image: url(/assets/hero-bg-2-02.png);
+    background-size: cover;
+}
+
 #about {
     h1 { margin-bottom: 40px; }
     
     .row {
         display: flex;
         flex-direction: row;
-
-        .col {
-            
-        }
 
         button {
             padding: 10px 20px;
@@ -289,7 +314,7 @@ nav {
         .about-sect {
             transition: 0.3s ease-in-out;
 
-            p { margin-bottom: 15px; }
+            p { margin: 15px 0; }
 
             ul {
                 list-style: inside url(/assets/list-icon.png);
@@ -297,11 +322,22 @@ nav {
                 li { margin: 10px 0; font-size: 1.1em; }
             }
         }
+
+        #div-2 {
+
+            .skill {
+                color: var(--primaryPurple);
+                padding: 5px 10px;
+                border: 2px solid var(--primaryPurple);
+                border-radius: 10px;
+                margin: 5px 10px 15px 0;
+            }
+        }
     }
 }
 
 .about-active {
-    background-color: #894CF6;
+    background-image: linear-gradient(to bottom, var(--lightPurple), var(--primaryPurple));
 
     p { color: white; }
 }
