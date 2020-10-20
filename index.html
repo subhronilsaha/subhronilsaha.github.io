@@ -110,7 +110,7 @@
 	<!-- ----------------------  ABOUT SECTION ---------------------- -->
 	<section class="container about">
 		<div id="about">
-			<div class="row">
+			<div class="row about-left-column">
 				<div class="col" style="margin-right: 20px; margin-bottom: 20px;">
 					<h1 style="display: flex; align-items: center;"> 
 						<ion-icon style="margin-right: 10px;" name="person-outline"></ion-icon> 
@@ -184,7 +184,7 @@
 					</div>
 						 
 				</div>
-				<div class="col">
+				<div class="col about-right-column">
 					<img
 						src="assets/me-working.JPG" 
 						alt="working-on-xcode"
@@ -254,7 +254,7 @@
 						width="100%"
 					>
 					<div class="card-desc">
-						<h2 style="color: #192548;">Face Detect</h2>
+						<h2 style="color: #d19d0c;">Face Detect</h2>
 						<h3>Web</h3>
 						Face Detect is a web based face detection visualiser, using Clarif.ai face detection model API. Frontend is built with React, and authentication is handled using a Node/Express server and Postgres database. 
 						<br> <br>
@@ -277,7 +277,7 @@
 						width="100%"
 					>
 					<div class="card-desc">
-						<h2 style="color: #192548;">TreeFam</h2>
+						<h2 style="color: #127e3b;">TreeFam</h2>
 						<h3>Web</h3>
 						Treefam is a social network for nature lovers. Users plant trees, and get 'climate points', and compete with their friends. They also get to see where their friends are planting trees. Built during Ivy Hacks 2020 (Ivy League Hackathon).
 						<br> <br>
@@ -324,13 +324,13 @@
 	<!-- jQUERY CDN -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 	<!-- GSAP -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-	<!-- <script src="js/animations/home-anim.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>	<script src="js/animations/home-anim.js"></script>
 	<!-- HAMBURGER CLICK -->
 	<script src="js/animations/hamburger.js"></script>
 	<!-- Custom Javascript -->
 	<script src="js/animations/about-anim.js"></script>
-
+	<!-- Preloader -->
 	<script>
 		$(window).on('load', function() {
 			$('.loader-container').fadeOut(1000);

@@ -1,19 +1,41 @@
-var tl = gsap.timeline();
-// var tween = gsap.tweenMax();
+var tl1 = gsap.timeline();
 
-tl.from('nav', 1, {y: 100, opacity: 0});
+var tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".about",
+        start: "top 50%",
+        end: "bottom top",
+        toggleActions: "restart none none reset"
+    }
+});
+
+var tl3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".projects",
+        start: "top 50%",
+        end: "bottom top",
+        toggleActions: "restart none none reset"
+    }
+});
+
+tl1.from('nav', 1, {y: 100, opacity: 0});
 
 if(screen.width <= 768) {
-    tl.from('.hamburger', 1, {y: 100, opacity: 0})
+    tl1.from('.hamburger', 1, {y: 100, opacity: 0})
 } else {
-    tl.staggerFrom('.link-holder ul li', 0.7, {y: 100, opacity: 0}, 0.2);
+    tl1.staggerFrom('.link-holder ul li', 0.7, {y: 100, opacity: 0}, 0.2);
 }
 
-tl.from('.intro-text', 1, {y: 100, opacity: 0});
-tl.staggerFrom('.social-icon', 1, {y: 100, opacity: 0}, 0.2);
+tl1.from('.intro-text', 1, {y: 100, opacity: 0});
+tl1.staggerFrom('.social-icon', 1, {y: 100, opacity: 0}, 0.2);
 
-tl.from('.about', 1, {y: 100, opacity: 0});
+tl2
+.from(".about-left-column", {y: 100, opacity: 0, duration: 1})
+.from(".about-right-column", {y: 100, opacity: 0, duration: 2}, "-=1");
 
-tl.from('#projects', 1, {y: 100, opacity: 0});
+tl3
+.from(".projects h1", {y: 100, opacity: 0, duration: 1})
+.from(".card", {opacity: 0, duration: 0.5})
+
 
 

@@ -334,10 +334,6 @@ nav .link-holder ul li a:hover {
 
 .hero .profile-img {
   height: 160px;
-  border: 3px solid transparent;
-  -o-border-image: linear-gradient(to right, green, lightgreen);
-     border-image: -webkit-gradient(linear, left top, right top, from(green), to(lightgreen));
-     border-image: linear-gradient(to right, green, lightgreen);
   border-radius: 100%;
   margin-bottom: 30px;
 }
@@ -579,6 +575,7 @@ nav .link-holder ul li a:hover {
   }
   .container #projects .card {
     width: 100%;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
