@@ -35,7 +35,7 @@ tl2
 
 tl3
 .from(".projects h1", {y: 100, opacity: 0, duration: 1})
-.from(".card", {opacity: 0, duration: 0.5})
+.from(".card", {opacity: 0, duration: 0.1})
 
 
 

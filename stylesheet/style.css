@@ -547,11 +547,13 @@ nav .link-holder ul li a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  text-align: center;
 }
 
 .resume h1 {
   margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px dashed var(--primaryPink);
+  color: var(--white);
 }
 
 .resume ion-icon {
