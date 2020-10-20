@@ -387,7 +387,7 @@ nav {
         width: 45%;
         transition: 0.3s ease-in-out;
         cursor: pointer;
-        margin-right: 20px;
+        margin-right: 5%;
         margin-bottom: 20px;
 
         img {
@@ -409,6 +409,31 @@ nav {
                 background-color: whitesmoke;
             }
         }
+    }
+}
+
+/* ------- FOOTER ------- */
+.resume {
+    background-color: #5944C7;
+    color: white;
+
+    #resume { 
+        display: flex; 
+        flex-direction: column;
+        width: 100%; 
+        text-align: center;
+    }
+
+    h1 { margin-bottom: 40px; }
+
+    ion-icon {
+        margin: 25px 0;
+        font-size: 50px;
+        transition: 0.3s ease-in-out;
+    }
+
+    ion-icon:hover {
+        transform: scale(1.2);
     }
 }
 

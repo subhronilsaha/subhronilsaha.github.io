@@ -27,7 +27,7 @@ if(screen.width <= 768) {
 }
 
 tl1.from('.intro-text', 1, {y: 100, opacity: 0});
-tl1.staggerFrom('.social-icon', 1, {y: 100, opacity: 0}, 0.2);
+tl1.staggerFrom('.hero .social-icon', 1, {y: 100, opacity: 0}, 0.2);
 
 tl2
 .from(".about-left-column", {y: 100, opacity: 0, duration: 1})

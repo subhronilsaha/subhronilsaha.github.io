@@ -502,7 +502,7 @@ nav .link-holder ul li a:hover {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 5%;
   margin-bottom: 20px;
 }
 
@@ -530,6 +530,40 @@ nav .link-holder ul li a:hover {
 
 #projects .card:hover .card-desc {
   background-color: whitesmoke;
+}
+
+/* ------- FOOTER ------- */
+.resume {
+  background-color: #5944C7;
+  color: white;
+}
+
+.resume #resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.resume h1 {
+  margin-bottom: 40px;
+}
+
+.resume ion-icon {
+  margin: 25px 0;
+  font-size: 50px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.resume ion-icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* ------- FOOTER ------- */
