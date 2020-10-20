@@ -56,6 +56,35 @@ body {
 //     }
 // }
 
+.loader-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: hsl(0, 0%, 16%);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loader {
+        width: 50px;
+        height: 50px;
+        border: 5px solid;
+        color: cyan;
+        border-radius: 100%;
+        border-top: transparent;
+        border-left: transparent;
+        animation: spin 1.2s infinite;
+    }
+}
+
+@keyframes spin {
+    25% { color: salmon; }
+    50% { color: var(--lightPurple); }
+    75% { color: var(--sap-green); }
+    to { transform: rotate(360deg); }
+}
+
 /* ------- MOBILE NAVIGATION ------- */
 #mobile-menu {
     height: 100vh;
@@ -242,13 +271,15 @@ nav {
         align-items: center;
         padding: 10px 20px;
         border-radius: 10px;
-        border: 2px solid white;
         color: white;
+        border: 2px solid white;
         background: none;
         cursor: pointer;
         transition: 0.3s ease-in-out;
 
         margin-bottom: 40px;
+
+        a { color: white; }
 
         ion-icon {
             font-size: 20px;

@@ -39,6 +39,67 @@ body p {
   font-size: 1.2em;
 }
 
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: #292929;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader-container .loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid;
+  color: cyan;
+  border-radius: 100%;
+  border-top: transparent;
+  border-left: transparent;
+  -webkit-animation: spin 1.2s infinite;
+          animation: spin 1.2s infinite;
+}
+
+@-webkit-keyframes spin {
+  25% {
+    color: salmon;
+  }
+  50% {
+    color: var(--lightPurple);
+  }
+  75% {
+    color: var(--sap-green);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  25% {
+    color: salmon;
+  }
+  50% {
+    color: var(--lightPurple);
+  }
+  75% {
+    color: var(--sap-green);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /* ------- MOBILE NAVIGATION ------- */
 #mobile-menu {
   height: 100vh;
@@ -303,13 +364,17 @@ nav .link-holder ul li a:hover {
           align-items: center;
   padding: 10px 20px;
   border-radius: 10px;
-  border: 2px solid white;
   color: white;
+  border: 2px solid white;
   background: none;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   margin-bottom: 40px;
+}
+
+.hero button a {
+  color: white;
 }
 
 .hero button ion-icon {

@@ -19,6 +19,11 @@
 </head>
 <body>	
 
+	<!-- ----------------------  LOADER ---------------------- -->
+	<div class="loader-container">
+		<div class="loader"></div>
+	</div>
+
 	<!-- ---------------------- NAVIGATION BAR ---------------------- -->
 	<div class="hero-and-nav">
 	<nav>
@@ -57,7 +62,7 @@
 					<span style="color: #4082EA;">MERN</span>  stack and native iOS applications in <span style="color: #E65433;">Swift</span>. I am currently a Junior studying 
 					Computer Science at UEM, Kolkata. 
 				</p>
-				<button>View my work <ion-icon name="chevron-forward-circle-outline"></ion-icon> </button> 
+				<button> <a href="#projects">View my work</a> <ion-icon name="chevron-forward-circle-outline"></ion-icon> </button> 
 			</div>
 			<!-- Social Icons -->
 			<div class="social-icons">
@@ -238,5 +243,11 @@
 	<script src="js/animations/hamburger.js"></script>
 	<!-- Custom Javascript -->
 	<script src="js/animations/about-anim.js"></script>
+
+	<script>
+		$(window).on('load', function() {
+			$('.loader-container').fadeOut(1000);
+		})
+	</script>
 </body>
 </html>
