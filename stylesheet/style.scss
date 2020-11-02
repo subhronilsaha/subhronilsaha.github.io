@@ -236,7 +236,7 @@ nav {
 }
 
 .sticky + .hero {
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 /* ------- MAIN ------- */
@@ -260,6 +260,7 @@ nav {
     text-align: center;
     min-height: 80vh;
     color: var(--white);
+    transition: 0.2s ease-in-out;
 
     .profile-img {
         height: 160px;

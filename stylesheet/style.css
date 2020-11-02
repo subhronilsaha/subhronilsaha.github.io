@@ -302,7 +302,7 @@ nav .link-holder ul li a:hover {
 }
 
 .sticky + .hero {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 /* ------- MAIN ------- */
@@ -337,6 +337,8 @@ nav .link-holder ul li a:hover {
   text-align: center;
   min-height: 80vh;
   color: var(--white);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .hero .profile-img {
