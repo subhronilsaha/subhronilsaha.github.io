@@ -235,6 +235,10 @@ nav {
     background-color: var(--darkGrey);
 }
 
+.sticky + .hero {
+    padding-top: 80px;
+}
+
 /* ------- MAIN ------- */
 .hero-and-nav {
     background-image: url(/assets/hero-bg-01-02.png);
@@ -414,7 +418,7 @@ nav {
         transition: 0.3s ease-in-out;
         cursor: pointer;
         margin-right: 5%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
 
         img {
             border-radius: 15px 15px 0 0;
