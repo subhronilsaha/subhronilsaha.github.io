@@ -64,8 +64,15 @@ body {
     background: hsl(0, 0%, 16%);
     z-index: 100;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
+    padding: 50px;
+
+    p {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
 
     .loader {
         width: 50px;
@@ -76,6 +83,7 @@ body {
         border-top: transparent;
         border-left: transparent;
         animation: spin 1.2s infinite;
+        margin-top: 50px;
     }
 }
 
