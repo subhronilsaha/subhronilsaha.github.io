@@ -18,6 +18,15 @@ var tl3 = gsap.timeline({
     }
 });
 
+var tl4 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".resume",
+        start: "top 50%",
+        end: "bottom top",
+        toggleActions: "restart none none reset"
+    }
+});
+
 tl1.from('nav', 1, {y: 100, opacity: 0});
 
 if(screen.width <= 768) {
@@ -37,5 +46,8 @@ tl3
 .from(".projects h1", {y: 100, opacity: 0, duration: 1})
 .from(".card", {opacity: 0, duration: 0.1})
 
+tl4
+.from(".resume h1", {y: 100, opacity: 0, duration: 1})
+.from(".resume a", {opacity: 0, duration: 1})
 
 

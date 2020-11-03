@@ -44,7 +44,7 @@ body p {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: #292929;
+  background: #131313;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,17 +53,16 @@ body p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 50px;
 }
 
-.loader-container p {
-  font-size: 2em;
+.loader-container h1 {
   margin-bottom: 30px;
 }
 
@@ -216,6 +215,10 @@ body p {
           animation: smallbig 0.6s forwards;
 }
 
+.toggle-hamburger .hamburger .line {
+  background-color: cyan;
+}
+
 .toggle-hamburger .hamburger .line:nth-child(1), .toggle-hamburger .hamburger .line:nth-child(2), .toggle-hamburger .hamburger .line:nth-child(3) {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
@@ -254,8 +257,8 @@ nav {
   height: 70px;
   padding: 10px 50px;
   z-index: 3;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 nav span a {
@@ -313,7 +316,7 @@ nav .link-holder ul li a:hover {
 }
 
 .sticky + .hero {
-  padding-top: 70px;
+  margin-top: 140px;
 }
 
 /* ------- MAIN ------- */

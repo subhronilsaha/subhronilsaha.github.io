@@ -61,16 +61,16 @@ body {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background: hsl(0, 0%, 16%);
+    background: #131313;
     z-index: 100;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 50px;
 
-    p {
-        font-size: 2em;
+    h1 {
+        // font-size: 2em;
         margin-bottom: 30px;
     }
 
@@ -163,6 +163,8 @@ body {
     .hamburger {
         animation: smallbig 0.6s forwards;
 
+        .line { background-color: cyan; }
+
         .line:nth-child(1), .line:nth-child(2), .line:nth-child(3){
             transition-delay: 0.2s;
         }
@@ -194,7 +196,7 @@ nav {
     height: 70px;
     padding: 10px 50px;
     z-index: 3;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 
     span {
         a {
@@ -244,7 +246,7 @@ nav {
 }
 
 .sticky + .hero {
-    padding-top: 70px;
+    margin-top: 140px;
 }
 
 /* ------- MAIN ------- */
