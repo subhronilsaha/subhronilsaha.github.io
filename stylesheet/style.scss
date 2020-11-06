@@ -188,6 +188,17 @@ body {
     }
 }
 
+.hero-and-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150vh;
+    z-index: -1;
+    background-image: url(/assets/hero-bg-01-02.png);
+    background-size: cover;
+}
+
 /* ------- NAVIGATION BAR ------- */
 nav {
     display: flex;
@@ -245,15 +256,11 @@ nav {
     background-color: var(--darkGrey);
 }
 
-.sticky + .hero {
-    margin-top: 140px;
+.sticky + .cont-1 {
+    margin-top: 70px;
 }
 
 /* ------- MAIN ------- */
-.hero-and-nav {
-    background-image: url(/assets/hero-bg-01-02.png);
-    background-size: cover;
-}
 
 .container {
     height: 100%;
