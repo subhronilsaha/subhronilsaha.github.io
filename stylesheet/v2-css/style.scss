@@ -41,12 +41,12 @@ body {
 // === MARK: Navbar
 
 .navbar-container {
-    min-height: 10vh;
+    height: 80px;
     width: 100%;
     position: fixed;
     background-color: green;
     z-index: 1000;
-    padding: 30px 50px;
+    padding: 10px 50px;
     background-color: rgba($color: #1A1A1D, $alpha: 0.8);
     backdrop-filter: blur(5px);
 
@@ -56,6 +56,7 @@ body {
         width: 100%;
         // background-color: red;
         justify-content: space-between;
+        align-items: center;
 
         a {
             color: white;
@@ -134,7 +135,7 @@ body {
             width: 70%;
             // border: 2px solid salmon;
             // background-color: pink;
-            margin-left: 30px;
+            padding-left: 50px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -229,8 +230,132 @@ body {
     }
 }
 
-.hero-section-container-2 {
-    height: 100vh;
+// === MARK: Featured Section
+.featured-section-container {
+    min-height: 100vh;
     position: relative;
-    background-color: purple;
+    background-color: var(--black-one);
+
+    .featured-section-content-container {
+        position: relative;
+        height: 100%;
+        padding: 50px 0;
+
+        .featured-section-content-main-row-1 {
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 50px 10px 50px;
+
+            // background-color: pink;
+        }
+
+        .featured-section-content-main-row-2 {
+            min-height: 90%;
+            // background-color: purple;
+
+            .featured-section-carousel-container {
+                height: 100%;
+                overflow-x: auto;
+
+                .featured-section-carousel-content-container {
+                    display: flex;
+                    flex-direction: row;
+                    height: 100%;
+                    align-items: flex-start;
+
+                    .featured-section-carousel-card {
+                        height: 100%;
+                        min-width: 500px;
+                        margin-right: 30px;
+                        // border-radius: 40px;
+                        transition: 0.2s all ease-in-out;
+                        opacity: 0.7;
+                    }
+
+                    .featured-section-carousel-card:hover {
+                        opacity: 1;
+                    }
+
+                    .featured-section-carousel-card:nth-child(1) {
+                        margin-left: 50px;
+                        // border-radius: 40px;
+                    }
+
+                    .last-featured-card {
+                        // background-color: antiquewhite;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Dancing Script', cursive;
+                        font-size: 50px;
+                        font-weight: 500;
+                        text-shadow: 0 0 10px antiquewhite;
+                        height: 600px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+// === MARK: About Me Section
+.about-me-section-container {
+    height: 100%;
+    position: relative;
+    background-color: var(--black-one);
+
+    .about-me-section-content-container {
+        padding: 50px;
+        // background-color: pink;
+
+        .about-me-section-content-main-row-1 {
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            // background-color: pink;
+            h1 {
+                color: var(--light-red);
+            }
+        }
+
+        .about-me-section-content-main-row-2 {
+            height: 90%;
+            // background-color: purple;
+            padding: 30px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .about-me-section-content-main-row-2-col {
+                width: 50%;
+                height: 100%;
+                // background-color: #3B89FE;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    font-size: 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--cobalt-blue);
+                    }
+                }
+
+                img {
+                    width: 80%;
+                    align-self: center;
+                }
+            }
+
+        }
+    }
 }

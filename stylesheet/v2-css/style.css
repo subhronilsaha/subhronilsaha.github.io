@@ -41,12 +41,12 @@ body h5 {
 }
 
 .navbar-container {
-  min-height: 10vh;
+  height: 80px;
   width: 100%;
   position: fixed;
   background-color: green;
   z-index: 1000;
-  padding: 30px 50px;
+  padding: 10px 50px;
   background-color: rgba(26, 26, 29, 0.8);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -64,6 +64,9 @@ body h5 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar-container .nav-items-container a {
@@ -151,7 +154,7 @@ body h5 {
 .hero-section-container .hero-section-content-container .hero-section-main-row-col-2 {
   height: 100%;
   width: 70%;
-  margin-left: 30px;
+  padding-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,9 +273,167 @@ body h5 {
   opacity: 1;
 }
 
-.hero-section-container-2 {
-  height: 100vh;
+.featured-section-container {
+  min-height: 100vh;
   position: relative;
-  background-color: purple;
+  background-color: var(--black-one);
+}
+
+.featured-section-container .featured-section-content-container {
+  position: relative;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.featured-section-container .featured-section-content-container .featured-section-content-main-row-1 {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 50px 10px 50px;
+}
+
+.featured-section-container .featured-section-content-container .featured-section-content-main-row-2 {
+  min-height: 90%;
+}
+
+.featured-section-container .featured-section-content-container .featured-section-content-main-row-2 .featured-section-carousel-container {
+  height: 100%;
+  overflow-x: auto;
+}
+
+.featured-section-container .featured-section-content-container .featured-section-content-main-row-2 .featured-section-carousel-container .featured-section-carousel-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.featured-section-container .featured-section-content-container .featured-section-content-main-row-2 .featured-section-carousel-container .featured-section-carousel-content-container .featured-section-carousel-card {
+  height: 100%;
+  min-width: 500px;
+  margin-right: 30px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  opacity: 0.7;
+}
+
+.featured-section-container .featured-section-content-container .featured-section-content-main-row-2 .featured-section-carousel-container .featured-section-carousel-content-container .featured-section-carousel-card:hover {
+  opacity: 1;
+}
+
+.featured-section-container .featured-section-content-container .featured-section-content-main-row-2 .featured-section-carousel-container .featured-section-carousel-content-container .featured-section-carousel-card:nth-child(1) {
+  margin-left: 50px;
+}
+
+.featured-section-container .featured-section-content-container .featured-section-content-main-row-2 .featured-section-carousel-container .featured-section-carousel-content-container .last-featured-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  font-weight: 500;
+  text-shadow: 0 0 10px antiquewhite;
+  height: 600px;
+}
+
+.about-me-section-container {
+  height: 100%;
+  position: relative;
+  background-color: var(--black-one);
+}
+
+.about-me-section-container .about-me-section-content-container {
+  padding: 50px;
+}
+
+.about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-1 {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-1 h1 {
+  color: var(--light-red);
+}
+
+.about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-2 {
+  height: 90%;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-2 .about-me-section-content-main-row-2-col {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-2 .about-me-section-content-main-row-2-col p {
+  font-size: 20px;
+}
+
+.about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-2 .about-me-section-content-main-row-2-col p a {
+  text-decoration: none;
+  color: var(--cobalt-blue);
+}
+
+.about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-2 .about-me-section-content-main-row-2-col img {
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */
