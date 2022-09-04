@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9151P13E3M"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-9151P13E3M');
+	</script>
+	
+	<title>Subhronil Saha</title>
+	<link rel="icon" href="assets/memoji.jpg" type="image/icon type">
+	<link rel="stylesheet" href="stylesheet/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Font: Montserrat - 100, 400, 500, 700; Lato - 300, 400, 700 -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<!-- Iconify library -->
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<!-- Ionicons library -->
+	<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+	
+</head>
+<body>	
+
+	<!-- ----------------------  LOADER ---------------------- -->
+	<div class="loader-container">
+		<h1>Welcome to Subhronil Saha's Developer Portfolio!</h1>
+		Please wait! The webpage is loading...
+		<div class="loader"></div>
+	</div>
+
+	<div class="hero-and-nav"></div>
+
+	<!-- ---------------------- NAVIGATION BAR ---------------------- -->
+	<nav id="navbar">
+		<span style=" display: flex; align-items: center; ">
+			<img 
+				src="assets/memoji.jpg" 
+				alt="memoji"
+				width="40px"
+				style="margin-right: 10px; border-radius: 100%;"
+			>
+			<a href="index.html">
+				Subhronil Saha
+			</a>
+		</span>
+
+		<div class="link-holder">
+			<!-- Nav links -->
+			<ul>
+				<li><a href="#trigger-1">About</a></li>
+				<li><a href="#trigger-2">Projects</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="https://dev.to/subhronilsaha">Blog</a></li>
+				<li><a href="#resume">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- ---------------------- HERO SECTION ---------------------- -->
+	<section class="container cont-1">
+		<div class="hero">
+			<div class="intro-text">
+				<img class="profile-img" src="assets/profile-image.jpg" alt="profile-image">
+				<h1> <span style="color: #4082EA;">Subhronil</span> Saha</h1>
+				<h4>Fullstack Web and iOS Developer</h4>
+				<p>	I am a software developer with experience building web applications in the
+					<span style="color: #4082EA;">MERN</span>  stack and native iOS applications in <span style="color: #E65433;">Swift</span>. I am currently a Junior studying 
+					Computer Science at UEM, Kolkata. 
+				</p>
+				<button> <a href="#projects">View my work</a> <ion-icon name="chevron-forward-circle-outline"></ion-icon> </button> 
+			</div>
+			<!-- Social Icons -->
+			<div class="social-icons">
+				<ul>
+					<li class="social-icon">
+						<a href="mailto:subhronilsaha26@gmail.com">
+							<ion-icon style="color:#fe2c54;" name="mail-outline"></ion-icon>
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="https://github.com/subhronilsaha">
+							<ion-icon style="color: white;" name="logo-github"></ion-icon>
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="https://twitter.com/SubhronilSaha">
+							<ion-icon style="color:#00acee;" name="logo-twitter"></ion-icon>
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="https://linkedin.com/in/subhronil-saha">
+							<ion-icon style="color:#0e76a8;" name="logo-linkedin"></ion-icon>
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="https://behance.net/subhronilsaha">
+							<ion-icon style="color:#053eff;" name="logo-behance"></ion-icon>
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="https://hackerrank.com/subhronilsaha26">
+							<img 
+								width="35px"
+								src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png" 
+								alt="hackerrank"
+							>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="trigger-1"></div>
+
+			<div>
+				<ion-icon id="down-icon" name="chevron-down"></ion-icon>
+			</div>
+		</div>
+	</section>
+
+	<!-- ----------------------  ABOUT SECTION ---------------------- -->
+	<section class="container about">
+		<div id="about">
+			<div class="row about-left-column">
+				<div class="col" style="margin-right: 20px; margin-bottom: 20px;">
+					<h1 style="display: flex; align-items: center;"> 
+						<ion-icon style="margin-right: 10px;" name="person-outline"></ion-icon> 
+						About Me
+					</h1>
+
+					<button class="about-active" id="about-btn-1"> 
+						<p>Overview</p>
+					</button>
+					<button id="about-btn-2"> 
+						<p>Skills</p>
+					</button>
+					<button id="about-btn-3"> 
+						<p>Hobbies</p>
+					</button>
+
+					<div id="div-1" class="about-sect">
+						<p>	
+							I am a software developer located in Kolkata, India, with experience in 
+							building native iOS applications and web applications in the MongoDB, Express, 
+							Node, React (MERN) stack. 
+						</p>
+						<p>
+							Currently, I am a junior studying Computer Science and Engineering at UEM, Kolkata. 
+						</p>
+						<p>
+							I am also passionate about graphic design and I lead the design club at my university. 
+						</p>
+
+					</div>
+
+					<div id="div-2" style="display: none;" class="about-sect">
+						<p><b style="margin-bottom: 20px;"> Web Development: </b></p> 
+						<div style="display: flex; flex-wrap: wrap;">
+							<div class="skill">HTML</div> 
+							<div class="skill">CSS</div>
+							<div class="skill">Javascript</div>
+							<div class="skill">React</div>
+							<div class="skill">Redux</div>
+							<div class="skill">Node.js</div>
+							<div class="skill">Express</div>
+							<div class="skill">MongoDB</div>
+							<!-- <div class="skill">Express</div> -->
+						</div>	
+
+						<p><b style="margin-bottom: 20px;"> Mobile Development: </b></p> 	
+						<div style="display: flex; flex-wrap: wrap;">
+							<div class="skill">Swift</div> 
+							<div class="skill">SwiftUI</div>
+							<div class="skill">CocoaPods</div>
+							<div class="skill">CoreData</div>
+							<div class="skill">Firebase</div>
+							<div class="skill">Flutter</div>
+						</div>
+
+						<p><b style="margin-bottom: 20px; "> Programming Languages: </b></p> 	
+						<div style="display: flex; flex-wrap: wrap;">
+							<div class="skill">C</div> 
+							<div class="skill">C++</div> 
+							<div class="skill">Java</div> 
+							<div class="skill">Python</div> 
+						</div>
+
+					</div>
+
+					<div id="div-3" style="display: none;" class="about-sect">
+						<ul>
+							<li><b style="color: #5944C7;">Piano:</b> I like playing relaxing piano pieces at times when I feel stressed. Currently, I'm trying to self-learn classical pieces like Satie Gymnopedie and Chopin Nocturne Op 9. </li>
+							<li><b style="color: #5944C7;">Rubiks Cube Speedsolving:</b> Trying to improve my personal best (1:13 minutes.) </li>
+							<li><b style="color: #5944C7;">Competitive Programming:</b> Practicing to become a 3 star coder on Codechef. </li>
+							<li><b style="color: #5944C7;">Graphic Design:</b> I am really passionate about graphic design. Also the head of our Graphic Design club at university.</li>
+						</ul>
+
+					</div>
+
+					<!-- <div id="trigger-2"></div> -->
+
+				</div>
+				<div class="col about-right-column">
+					<img
+						src="assets/me-working.JPG" 
+						alt="working-on-xcode"
+						width="350px"
+						style="border-radius: 10px;"
+					>
+					<div id="trigger-2"></div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ----------------------  PROJECTS SECTION ---------------------- -->
+	<section class="container projects">
+		<div id="projects">
+			<h1 style="display: flex; align-items: center;"> 
+				<ion-icon style="margin-right: 10px;" name="hammer-outline"></ion-icon> 
+				Projects
+			</h1>
+
+			<div class="row">
+				<!-- FIRECHAT -->
+				<div class="card">
+					<img 
+						src="/assets/mockup-firechat/Firechat-mockup.png" 
+						alt=""
+						width="100%"
+					>
+					<div class="card-desc">
+						<h2 style="color: #fe2c54;">Firechat</h2>
+						<h3>iOS</h3>
+						Firechat is a cloud based messaging service for iOS, which stores and fetches data from the Firebase servers. User authentication and Media storage are also being handled by Firebase.
+						<br> <br>
+						Github: <a href="https://github.com/subhronilsaha/Firechat">github.com/subhronilsaha/Firechat</a> 
+						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
+							<div class="skill">Swift 5</div>
+							<div class="skill">UIKit</div>
+							<div class="skill">Firebase</div>
+						</div>	
+					</div>
+				</div>
+
+				<!-- WWDC -->
+				<div class="card">
+					<img 
+						src="/assets/mockup-wwdc20/screen-1.png" 
+						alt=""
+						width="100%"
+					>
+					<div class="card-desc">
+						<h2 style="color: #192548;">Morse Code</h2>
+						<h3>Swift Playground</h3>
+						Morse Code is a Playground Book that teaches you morse code. I built it for WWDC 2020 Swift Student Challenge.  
+						<br> <br>
+						Github: <a href="https://github.com/subhronilsaha/wwdc20-submission">github.com/subhronilsaha/wwdc20-submission</a>
+						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
+							<div class="skill">Swift Playground</div>
+							<div class="skill">SwiftUI</div>
+						</div>	
+					</div>
+				</div>
+
+				<!-- Face Detect -->
+				<div class="card">
+					<img 
+						src="/assets/mockup-face-detect/screen-1.png" 
+						alt=""
+						width="100%"
+					>
+					<div class="card-desc">
+						<h2 style="color: #d19d0c;">Face Detect</h2>
+						<h3>Web</h3>
+						Face Detect is a web based face detection visualiser, using Clarif.ai face detection model API. Frontend is built with React, and authentication is handled using a Node/Express server and Postgres database. 
+						<br> <br>
+						Github: <a href="https://github.com/subhronilsaha/wwdc20-submission">github.com/subhronilsaha/wwdc20-submission</a>
+						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
+							<div class="skill">React</div>
+							<div class="skill">Node.js</div>
+							<div class="skill">Express</div>
+							<div class="skill">PostgreSQL</div>
+							<div class="skill">Clarif.ai</div>
+						</div>	
+					</div>
+				</div>
+
+				<!-- Treefam -->
+				<div class="card">
+					<img 
+						src="/assets/mockup-treefam/screen-1.png" 
+						alt=""
+						width="100%"
+					>
+					<div class="card-desc">
+						<h2 style="color: #127e3b;">TreeFam</h2>
+						<h3>Web</h3>
+						Treefam is a social network for nature lovers. Users plant trees, and get 'climate points', and compete with their friends. They also get to see where their friends are planting trees. Built during Ivy Hacks 2020 (Ivy League Hackathon).
+						<br> <br>
+						Github: <a href="https://github.com/subhronilsaha/ivyhacks-submission">github.com/subhronilsaha/ivyhacks-submission</a>
+						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
+							<div class="skill">React</div>
+							<div class="skill">Firebase</div>
+							<div class="skill">Google Maps API</div>
+						</div>	
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ----------------------  RESUME ---------------------- -->
+	<section class="container resume">
+		<div id="resume">
+			<h1>Contact me for work related queries!</h1>
+			<div class="resume-col-1" >
+				<h4>Download my resume</h4>
+				<a href="https://drive.google.com/file/d/1_QxennZxwwPP8V7K8xWiKJpNilmNsCHq/view?usp=sharing">
+					<ion-icon 
+						name="document-outline"
+						style="color: white;">
+					</ion-icon>
+				</a> 
+			</div>
+			
+			<div class="resume-col-2" style="display: flex; flex-direction: column;">
+				<h4>Get in touch:</h4>
+				<div>
+					<a href="mailto:subhronilsaha26@gmail.com">
+						<ion-icon style="color:whitesmoke;" name="mail-outline"></ion-icon>
+					</a>
+
+					<a href="https://twitter.com/SubhronilSaha">
+						<ion-icon style="color:whitesmoke;" name="logo-twitter"></ion-icon>
+					</a>
+
+					<a href="https://linkedin.com/in/subhronil-saha">
+						<ion-icon style="color:whitesmoke;" name="logo-linkedin"></ion-icon>
+					</a>
+					
+					<a href="https://dev.to/subhronilsaha">
+						<img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Subhronil Saha's DEV Community Profile" height="30" width="30">
+					</a>
+				</div>	
+			</div>
+			
+
+		</div>
+	</section>
+
+	<!-- ----------------------  FOOTER ---------------------- -->
+	<div class="footer">
+		<p>Made with <ion-icon style="color:#fe2c54;" name="heart"></ion-icon> by Subhronil Saha</p>
+		<p>&#169 Subhronil Saha, 2020</p>
+	</div>
+
+
+	<!-- ---------------------- MOBILE NAVIGATION ---------------------- -->
+	<section id="mobile-menu">
+		<ul>
+			<li><a href="#trigger-1">About</a></li>
+			<li><a href="#trigger-2">Projects</a></li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="https://dev.to/subhronilsaha">Blog</a></li>
+		</ul>
+	</section>
+
+	<!-- Hamburger Menu -->
+	<div class="hamburger" id="hamburger" onclick=hamburgerAnim()>
+		<span class="line" id="line1"></span>
+		<span class="line"></span>
+		<span class="line" id="line3"></span>
+	</div>
+
+	
+	<!-- ---------------------- SCRIPTS ---------------------- -->
+
+	<!-- jQUERY CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<!-- GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>	<script src="js/animations/home-anim.js"></script>
+	<!-- HAMBURGER CLICK -->
+	<script src="js/animations/hamburger.js"></script>
+	<!-- Sticky navigation bar -->
+	<script src="js/stickyNav.js"></script>
+	<script src="js/cursor.js"></script>
+	<!-- Custom Javascript -->
+	<script src="js/animations/about-anim.js"></script>
+	<!-- Preloader -->
+	<script>
+		$(window).on('load', function() {
+			$('.loader-container').fadeOut(1000);
+		})
+	</script>
+</body>
+</html>

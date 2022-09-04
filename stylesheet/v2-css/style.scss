@@ -1,0 +1,236 @@
+// === MARK: Fonts
+// ========== Font #1: Lato
+// @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// === MARK: Common Styles
+
+:root {
+    --black-one : #1A1A1D;
+    --white : #FFFFFF;
+    --dark-blue : #1F274C;
+    --cobalt-blue : #3B89FE; 
+    --light-red : #BB5D73;
+    --light-purple : #A468E0;
+    --h1-font-size: 50px;
+    --h3-font-size: 35px;
+    --h5-font-size: 25px;
+    --p-font-size: 15px;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--white);
+    background-color: var(--black-one);
+
+    h1 { font-size: 50px; }
+    h3 { font-size: 35px; }
+    h5 { font-size: 25px; }
+    // p { font-size: 1.2em; }
+}
+
+// === MARK: Navbar
+
+.navbar-container {
+    min-height: 10vh;
+    width: 100%;
+    position: fixed;
+    background-color: green;
+    z-index: 1000;
+    padding: 30px 50px;
+    background-color: rgba($color: #1A1A1D, $alpha: 0.8);
+    backdrop-filter: blur(5px);
+
+    .nav-items-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        // background-color: red;
+        justify-content: space-between;
+
+        a {
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.3s all ease-in-out;
+        }
+
+        a:hover {
+            color: var(--cobalt-blue);
+            font-size: 21px;
+            text-shadow: 0 0 20px --cobalt-blue;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                a + a {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+.nav-underlay {
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--black-one);
+}
+
+// === MARK: Hero Section
+.hero-section-container {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    padding: 30px 50px;
+
+    .bg-img-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.1;
+    }
+    
+    .hero-section-content-container {
+        height: 100%;
+        width: 100%;
+        // background-color: purple;
+        display: flex;
+        flex-direction: row;
+
+        .hero-section-main-row-col-1 {
+            height: 100%;
+            width: 30%;
+            // border: 2px solid salmon;
+            // background-color: peru;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            .main-subhronil-photo {
+                height: 100%;
+            }
+        }
+
+        .hero-section-main-row-col-2 {
+            height: 100%;
+            width: 70%;
+            // border: 2px solid salmon;
+            // background-color: pink;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+            .wrap{
+                font-family: 'Dancing Script', cursive;
+                font-size: 32px;
+                font-weight: 500;
+            }
+
+            .hero-section-info-col {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-top: 30px;
+
+                h1 {
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    color: var(--cobalt-blue);
+                }
+
+                h3 {
+                    font-weight: 400;
+                }
+
+                h5 {
+                    font-weight: 400;
+                }
+
+                .hero-section-social-buttons-container {
+                    background-color: var(--dark-blue);
+                    padding: 15px 25px;
+                    margin: 30px 0;
+                    border-radius: 30px;
+                    display: flex;
+                    align-items: center;
+    
+                    .hero-sect-social-icon-link {
+                        .hero-sect-social-icon {
+                            height: 30px;
+                            opacity: 0.8;
+                            transition: 0.2s ease-in-out;
+                        }
+                    }
+                    
+                    .hero-sect-social-icon-link + .hero-sect-social-icon-link {
+                        margin-left: 20px;
+                    }
+
+                    .hero-sect-social-icon-link:hover {
+                        .hero-sect-social-icon {
+                            height: 40px;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+            }
+
+            .hero-sect-know-more-btn {
+                height: 60px;
+                border-radius: 35px;
+                border: none;
+                padding: 10px 10px 10px 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--light-purple);
+                font-size: var(--h5-font-size);
+                opacity: 0.5;
+                transition: 0.2s all ease-in;
+                cursor: pointer;
+                margin-bottom: 30px;
+
+                img {
+                    height: 42px;
+                    width: 42px;
+                    // background-color: purple;
+                    margin-left: 10px;
+                }
+            }
+
+            .hero-sect-know-more-btn:hover {
+                opacity: 1;
+            }
+            
+        }
+    }
+}
+
+.hero-section-container-2 {
+    height: 100vh;
+    position: relative;
+    background-color: purple;
+}
