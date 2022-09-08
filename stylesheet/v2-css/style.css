@@ -1,5 +1,6 @@
 :root {
   --black-one: #1A1A1D;
+  --black-two: #2D2D2D;
   --white: #FFFFFF;
   --dark-blue: #1F274C;
   --cobalt-blue: #3B89FE;
@@ -120,6 +121,48 @@ body h5 {
   opacity: 0.1;
 }
 
+.hero-section-container .hero-sect-bg-1-3rd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  border-radius: 0 50px 50px 0;
+  background-color: #2d2d2d;
+}
+
+.hero-section-container .hero-sect-bg-1-3rd img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 50px 50px 0;
+  -webkit-animation: 2s infinite alternate pulse;
+          animation: 2s infinite alternate pulse;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+}
+
 .hero-section-container .hero-section-content-container {
   height: 100%;
   width: 100%;
@@ -134,7 +177,7 @@ body h5 {
 
 .hero-section-container .hero-section-content-container .hero-section-main-row-col-1 {
   height: 100%;
-  width: 30%;
+  width: 50%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,7 +196,7 @@ body h5 {
 
 .hero-section-container .hero-section-content-container .hero-section-main-row-col-2 {
   height: 100%;
-  width: 70%;
+  width: 50%;
   padding-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,6 +314,10 @@ body h5 {
 
 .hero-section-container .hero-section-content-container .hero-section-main-row-col-2 .hero-sect-know-more-btn:hover {
   opacity: 1;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0 0 10px #5d209a;
+          box-shadow: 0 0 10px #5d209a;
 }
 
 .featured-section-container {
@@ -337,6 +384,8 @@ body h5 {
 
 .featured-section-container .featured-section-content-container .featured-section-content-main-row-2 .featured-section-carousel-container .featured-section-carousel-content-container .featured-section-carousel-card:hover {
   opacity: 1;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .featured-section-container .featured-section-content-container .featured-section-content-main-row-2 .featured-section-carousel-container .featured-section-carousel-content-container .featured-section-carousel-card:nth-child(1) {
@@ -363,7 +412,7 @@ body h5 {
 .about-me-section-container {
   height: 100%;
   position: relative;
-  background-color: var(--black-one);
+  background-color: var(--black-two);
 }
 
 .about-me-section-container .about-me-section-content-container {
@@ -389,6 +438,12 @@ body h5 {
 
 .about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-1 h1 {
   color: var(--light-red);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-2 {
@@ -401,9 +456,9 @@ body h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-2 .about-me-section-content-main-row-2-col {
@@ -430,10 +485,21 @@ body h5 {
   color: var(--cobalt-blue);
 }
 
+.about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-2 .about-me-section-content-main-row-2-col .handwritten-about-me-txt {
+  font-family: 'Kalam', cursive;
+  font-size: 20px;
+  text-align: end;
+}
+
 .about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-2 .about-me-section-content-main-row-2-col img {
   width: 80%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.about-me-section-container .about-me-section-content-container .about-me-section-content-main-row-2 .about-me-section-content-main-row-2-col:first-child {
+  border-left: 5px solid salmon;
+  padding-left: 25px;
 }
 /*# sourceMappingURL=style.css.map */
