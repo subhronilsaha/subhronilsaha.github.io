@@ -1,407 +1,289 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9151P13E3M"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhronil Saha | iOS Software Engineer </title>
+    <link rel="stylesheet" href="stylesheet/v2-css/style.css">
 
-	  gtag('config', 'G-9151P13E3M');
-	</script>
-	
-	<title>Subhronil Saha</title>
-	<link rel="icon" href="assets/memoji.jpg" type="image/icon type">
-	<link rel="stylesheet" href="stylesheet/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- Font: Montserrat - 100, 400, 500, 700; Lato - 300, 400, 700 -->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-	<!-- Iconify library -->
-	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-	<!-- Ionicons library -->
-	<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
-	
 </head>
-<body>	
+<body>
 
-	<!-- ----------------------  LOADER ---------------------- -->
-	<div class="loader-container">
-		<h1>Welcome to Subhronil Saha's Developer Portfolio!</h1>
-		Please wait! The webpage is loading...
-		<div class="loader"></div>
-	</div>
+    <!-- FACEBOOK APIS -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0" nonce="h6ctSZH9"></script>
+    <!-- ==== -->
 
-	<div class="hero-and-nav"></div>
+    <!-- MARK: NAVIGATION BAR -->
+    <nav class="navbar-container">
+        <div class="nav-items-container">
+            <a href="#" style="display: flex; align-items: center; ">
+                Subhronil Saha 
+                <img 
+                    src="assets/emojis/memoji-coding.png" 
+                    alt=""
+                    height="50px"
+                    width="50px"
+                >
+            </a>
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                    <a href="#">Work</a>
+                    <a href="#">Blogs</a>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="nav-underlay">
+    </section>
 
-	<!-- ---------------------- NAVIGATION BAR ---------------------- -->
-	<nav id="navbar">
-		<span style=" display: flex; align-items: center; ">
-			<img 
-				src="assets/memoji.jpg" 
-				alt="memoji"
-				width="40px"
-				style="margin-right: 10px; border-radius: 100%;"
-			>
-			<a href="index.html">
-				Subhronil Saha
-			</a>
-		</span>
+    <!-- MARK: HERO SECTION -->
+    <section class="hero-section-container">
+        <!-- <img class="bg-img-1" src="assets/wallpapers/apple-mac-1-min.jpeg" alt=""> -->
+        <div class="hero-sect-bg-1-3rd">
+            <!-- <img src="./assets/hero-sect/wavy-bg-purple-black.png" alt=""> -->
+            <img src="assets/svgs/stroke-svg-test.svg" alt="" srcset="">
+        </div>
+        <div class="hero-section-content-container">
+            <div class="hero-section-main-row-col-1">
+                <!-- <img class="img-dot-pattern" src="assets/hero-sect/dot pattern.png" alt=""> -->
+                <img class="main-subhronil-photo" src="assets/my-photos/main-photo.png" alt="">
+            </div>
+            <div class="hero-section-main-row-col-2">
+                <p 
+                    id="typewrite"
+                    class="typewrite" 
+                    data-period="1000" 
+                    data-type=
+                        '[ "Hi!", "Namaste!", "Hola!", "Konnichiwa!", "Ciao!", "Bonjour!", "Hallo!", "Dzień dobry!"]'>
+                        <span class="wrap"></span>
+                </p>
 
-		<div class="link-holder">
-			<!-- Nav links -->
-			<ul>
-				<li><a href="#trigger-1">About</a></li>
-				<li><a href="#trigger-2">Projects</a></li>
-				<li><a href="#resume">Resume</a></li>
-				<li><a href="https://dev.to/subhronilsaha">Blog</a></li>
-				<li><a href="#resume">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
+                <div class="hero-section-info-col">
+                    <h3>I'm</h3>
+                    <h1>Subhronil Saha</h1>
+                    <h5>Software Engineer, iOS</h5>
+                    <h5 style="font-weight: 200;">Scouto (acquired. by Spinny)</h5>
 
-	<!-- ---------------------- HERO SECTION ---------------------- -->
-	<section class="container cont-1">
-		<div class="hero">
-			<div class="intro-text">
-				<img class="profile-img" src="assets/profile-image.jpg" alt="profile-image">
-				<h1> <span style="color: #4082EA;">Subhronil</span> Saha</h1>
-				<h4>Fullstack Web and iOS Developer</h4>
-				<p>	I am a software developer with experience building web applications in the
-					<span style="color: #4082EA;">MERN</span>  stack and native iOS applications in <span style="color: #E65433;">Swift</span>. I am currently a Junior studying 
-					Computer Science at UEM, Kolkata. 
-				</p>
-				<button> <a href="#projects">View my work</a> <ion-icon name="chevron-forward-circle-outline"></ion-icon> </button> 
-			</div>
-			<!-- Social Icons -->
-			<div class="social-icons">
-				<ul>
-					<li class="social-icon">
-						<a href="mailto:subhronilsaha26@gmail.com">
-							<ion-icon style="color:#fe2c54;" name="mail-outline"></ion-icon>
-						</a>
-					</li>
-					<li class="social-icon">
-						<a href="https://github.com/subhronilsaha">
-							<ion-icon style="color: white;" name="logo-github"></ion-icon>
-						</a>
-					</li>
-					<li class="social-icon">
-						<a href="https://twitter.com/SubhronilSaha">
-							<ion-icon style="color:#00acee;" name="logo-twitter"></ion-icon>
-						</a>
-					</li>
-					<li class="social-icon">
-						<a href="https://linkedin.com/in/subhronil-saha">
-							<ion-icon style="color:#0e76a8;" name="logo-linkedin"></ion-icon>
-						</a>
-					</li>
-					<li class="social-icon">
-						<a href="https://behance.net/subhronilsaha">
-							<ion-icon style="color:#053eff;" name="logo-behance"></ion-icon>
-						</a>
-					</li>
-					<li class="social-icon">
-						<a href="https://hackerrank.com/subhronilsaha26">
-							<img 
-								width="35px"
-								src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png" 
-								alt="hackerrank"
-							>
-						</a>
-					</li>
-				</ul>
-			</div>
+                    <div class="hero-section-social-buttons-container">
+                        <a class="hero-sect-social-icon-link" href="#"><img class="hero-sect-social-icon" src="assets/social-logos/gmail-logo.png" alt=""></a>
+                        <a class="hero-sect-social-icon-link" href="#"><img class="hero-sect-social-icon" src="assets/social-logos/linkedin-logo.png" alt=""></a>
+                        <a class="hero-sect-social-icon-link" href="#"><img class="hero-sect-social-icon" src="assets/social-logos/twitter-logo.png" alt=""></a>
+                        <a class="hero-sect-social-icon-link" href="#"><img class="hero-sect-social-icon" src="assets/social-logos/github-logo-white.png" alt=""></a>
+                        <a class="hero-sect-social-icon-link" href="#"><img class="hero-sect-social-icon" src="assets/social-logos/behance-logo.png" alt=""></a>
+                        <a class="hero-sect-social-icon-link" href="#"><img class="hero-sect-social-icon" src="assets/social-logos/hackerrank-logo.png" alt=""></a>
+                    </div>
 
-			<div id="trigger-1"></div>
+                </div>
 
-			<div>
-				<ion-icon id="down-icon" name="chevron-down"></ion-icon>
-			</div>
-		</div>
-	</section>
+                <button class="hero-sect-know-more-btn">
+                    More
+                    <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                </button>
+                
+            </div>
+        </div>
+    </section>
 
-	<!-- ----------------------  ABOUT SECTION ---------------------- -->
-	<section class="container about">
-		<div id="about">
-			<div class="row about-left-column">
-				<div class="col" style="margin-right: 20px; margin-bottom: 20px;">
-					<h1 style="display: flex; align-items: center;"> 
-						<ion-icon style="margin-right: 10px;" name="person-outline"></ion-icon> 
-						About Me
-					</h1>
+    <!-- MARK: Featured Posts -->
+    <section class="featured-section-container">
+        <div class="featured-section-content-container">
+            <div class="featured-section-content-main-row-1">
+                <h1 class="featured-sect-heading">Featured ✨</h1> 
+                <!-- <a href="#">View all -></a> -->
+                <div class="control-buttons">
+                    <button id="featured-btn-left" class="featured-btn">
+                        <ion-icon class="featured-chevron-icon" name="arrow-back-circle-outline"></ion-icon>
+                    </button>
+                    <button id="featured-btn-right" class="featured-btn">
+                        <ion-icon class="featured-chevron-icon" name="arrow-forward-circle-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="featured-section-content-main-row-2">
+                <div class="featured-section-carousel-container">
+                    <div class="featured-section-carousel-content-container" id="featured-section-carousel-content-container">
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Happy to share that I&#39;ve been selected as a WWDC Swift Student Challenge winner again (2nd time) this year! 🥳🎉 Big thanks to <a href="https://twitter.com/Apple?ref_src=twsrc%5Etfw">@Apple</a> for recognising our effort &amp; super thanks for the very unexpected bonus gift this year! Looking forward to a great WWDC &amp; congrats to all✌️<a href="https://twitter.com/hashtag/WWDC22?src=hash&amp;ref_src=twsrc%5Etfw">#WWDC22</a> <a href="https://t.co/NVlPRYgUYF">pic.twitter.com/NVlPRYgUYF</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1529137073814269952?ref_src=twsrc%5Etfw">May 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>    
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I got featured in <a href="https://twitter.com/Telegraph?ref_src=twsrc%5Etfw">@Telegraph</a> today! <a href="https://t.co/jAgVP6l0Iq">https://t.co/jAgVP6l0Iq</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1401901455141834754?ref_src=twsrc%5Etfw">June 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>     
+                        <div class="featured-section-carousel-card">
+                            <p style="font-size: 7px; color: #1a1a1d;">hey wassup</p>
+                            <div class="fb-post" data-href="https://www.facebook.com/subhronil.saha.16/posts/pfbid02c62r1q7hV5WcALVXoZBuHtkXezkE2AC36Ze9E9X9fLJ2RmjxtpU6bH88MqnuJBH2l" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/subhronil.saha.16/posts/3025417991038430" class="fb-xfbml-parse-ignore"><p>I&#039;m really happy to share that I&#039;ve been featured in The Telegraph-t2, Kolkata as part of their showcase of this year&#039;s...</p>Posted by <a href="https://www.facebook.com/subhronil.saha.16">Subhronil Saha</a> on&nbsp;<a href="https://www.facebook.com/subhronil.saha.16/posts/3025417991038430">Monday, 7 June 2021</a></blockquote></div>
+                        </div>                        
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just wrote an article explaining my Cocoapod library for quickly &amp; easily creating ring-charts in Swift! You can read it here <a href="https://t.co/wROZvwzLeX">https://t.co/wROZvwzLeX</a> <a href="https://twitter.com/hashtag/DEVCommunity?src=hash&amp;ref_src=twsrc%5Etfw">#DEVCommunity</a> <a href="https://twitter.com/hashtag/swift?src=hash&amp;ref_src=twsrc%5Etfw">#swift</a> <a href="https://twitter.com/hashtag/OpenSource?src=hash&amp;ref_src=twsrc%5Etfw">#OpenSource</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1429104649642995722?ref_src=twsrc%5Etfw">August 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just published my first Cocoapod library! CPRingChart is an open-source library for creating customisable ring charts in Swift. Go check it out 👇<a href="https://twitter.com/hashtag/swift?src=hash&amp;ref_src=twsrc%5Etfw">#swift</a> <a href="https://twitter.com/hashtag/ios?src=hash&amp;ref_src=twsrc%5Etfw">#ios</a> <a href="https://twitter.com/hashtag/Opensource?src=hash&amp;ref_src=twsrc%5Etfw">#Opensource</a> <a href="https://t.co/rUx0foD2RI">https://t.co/rUx0foD2RI</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1425304235130777600?ref_src=twsrc%5Etfw">August 11, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Awesome! Thanks <a href="https://twitter.com/Apple?ref_src=twsrc%5Etfw">@Apple</a> 🥳 <a href="https://twitter.com/hashtag/WWDC21?src=hash&amp;ref_src=twsrc%5Etfw">#WWDC21</a> <a href="https://t.co/LWhBFFUglI">pic.twitter.com/LWhBFFUglI</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1405481341215383555?ref_src=twsrc%5Etfw">June 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="und" dir="ltr">✨🥳 <a href="https://t.co/RAgSjxFBEc">pic.twitter.com/RAgSjxFBEc</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1521572543114579970?ref_src=twsrc%5Etfw">May 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Achievement unlocked! Thanks, <a href="https://twitter.com/WWDCScholars?ref_src=twsrc%5Etfw">@WWDCScholars</a> <a href="https://t.co/i0nGhg5Xxh">pic.twitter.com/i0nGhg5Xxh</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1402531002413576195?ref_src=twsrc%5Etfw">June 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Super happy to announce that I won the WWDC Swift Student Challenge this year! 🥳 Thank you, <a href="https://twitter.com/Apple?ref_src=twsrc%5Etfw">@Apple</a>! <a href="https://twitter.com/hashtag/SwiftStudentChallenge?src=hash&amp;ref_src=twsrc%5Etfw">#SwiftStudentChallenge</a> <a href="https://twitter.com/hashtag/WWDC21?src=hash&amp;ref_src=twsrc%5Etfw">#WWDC21</a> <a href="https://t.co/4tBHUKcnbf">pic.twitter.com/4tBHUKcnbf</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1399710951549521923?ref_src=twsrc%5Etfw">June 1, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;A Beginner&#39;s Guide to Swift Playgroundbooks&quot; by Subhronil Saha <a href="https://twitter.com/hashtag/DEVCommunity?src=hash&amp;ref_src=twsrc%5Etfw">#DEVCommunity</a> <a href="https://t.co/0ydTOkgzIJ">https://t.co/0ydTOkgzIJ</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1384871590857478144?ref_src=twsrc%5Etfw">April 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just received my IvyHacks swags!!! Big thanks to <a href="https://twitter.com/MLHacks?ref_src=twsrc%5Etfw">@MLHacks</a>, <a href="https://twitter.com/ivyhackathon?ref_src=twsrc%5Etfw">@ivyhackathon</a> &amp; all the organisers and sponsors for hosting this event! Looking forward to the 2021 hackathon season <a href="https://twitter.com/hashtag/mlh?src=hash&amp;ref_src=twsrc%5Etfw">#mlh</a> <a href="https://twitter.com/hashtag/hackathon?src=hash&amp;ref_src=twsrc%5Etfw">#hackathon</a> <a href="https://t.co/PRl42yKo8q">pic.twitter.com/PRl42yKo8q</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1357669970776236036?ref_src=twsrc%5Etfw">February 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="featured-section-carousel-card">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just received my Hacktoberfest swag kit! Big thanks to <a href="https://twitter.com/ThePracticalDev?ref_src=twsrc%5Etfw">@ThePracticalDev</a>, <a href="https://twitter.com/intel?ref_src=twsrc%5Etfw">@intel</a> &amp; <a href="https://twitter.com/digitalocean?ref_src=twsrc%5Etfw">@digitalocean</a>! ✨ <a href="https://twitter.com/hashtag/hacktoberfest2020?src=hash&amp;ref_src=twsrc%5Etfw">#hacktoberfest2020</a> <a href="https://t.co/BNYnZPonit">pic.twitter.com/BNYnZPonit</a></p>&mdash; Subhronil Saha (@SubhronilSaha) <a href="https://twitter.com/SubhronilSaha/status/1346770635645546496?ref_src=twsrc%5Etfw">January 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="featured-section-carousel-card last-featured-card">
+                            That's all folks!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<button class="about-active" id="about-btn-1"> 
-						<p>Overview</p>
-					</button>
-					<button id="about-btn-2"> 
-						<p>Skills</p>
-					</button>
-					<button id="about-btn-3"> 
-						<p>Hobbies</p>
-					</button>
+    <!-- MARK: About Me Section -->
+    <section class="about-me-section-container">
+        <div class="about-me-bg-div"></div>
+        <div class="about-me-section-content-container">
+            <div class="about-me-section-content-main-row-1">
+                <h1>About Me 
+                    <!-- <span> -->
+                        <img 
+                            src="assets/emojis/memoji-coding.png" 
+                            alt=""
+                            height="60px"
+                            width="60px"
+                        >
+                    <!-- </span> -->
+                </h1>
+                <!-- <a href="#">View all -></a> -->
+            </div>
+            <div class="about-me-section-content-main-row-2">
+                <div class="about-me-section-content-main-row-2-col">
+                    <!-- <p>Hi there! 😎</p>
+                    <br> -->
+                    <div class="about-quote">
+                        <h5>“Stay hungry. Stay foolish.”</h5>
+                        <p>- Steve Jobs</p>
+                    </div>
+                    <br>
+                    <p>I’m Subhronil, and I build apps & software that make people’s lives easier!</p>
+                    <br>
+                    <p>For the past 2 years, I’ve been building feature rich & scalable iOS apps, while working in the connected car & food tech industries. </p>
+                    <br>
+                    <p>Apart from work, I also occasionally contribute to open-source and I also have a Cocoapod library published <a href="#">here</a>. Feel free to check out my <a href="#">Github</a> for the same.</p>
+                    <br>
+                    <p>Also, I’ve been a 2-time WWDC Swift Student Challenge winner (2021, 2022), [which is a global coding contest for students held by Apple, for their WWDC event every year in order to encourage coding amongst students! Global Top 350 are selected as winners]. Read more about it <a href="#">here</a></p>
+                    <br>
+                    <p>Feel free to reach out to me on <a href="#">LinkedIn</a> for a chat!</p>
+                    <br>
+                    <!-- <p class="handwritten-about-me-txt">- Subhronil Saha</p> -->
+                    <br> <br> <br>
+                    <p style="font-size: 12px;">Psst... Here's a cool playlist for you! Why not vibe to it while you're going through this webpage? :)</p>
+                    <br>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2pnG9aD2nCt2mehEevZwxu?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div class="about-me-section-content-main-row-2-col">
+                    <img src="assets/my-photos/about-me-collage.png" alt="">
+                </div>
+        </div>
+    </section>
 
-					<div id="div-1" class="about-sect">
-						<p>	
-							I am a software developer located in Kolkata, India, with experience in 
-							building native iOS applications and web applications in the MongoDB, Express, 
-							Node, React (MERN) stack. 
-						</p>
-						<p>
-							Currently, I am a junior studying Computer Science and Engineering at UEM, Kolkata. 
-						</p>
-						<p>
-							I am also passionate about graphic design and I lead the design club at my university. 
-						</p>
+    <!-- MARK: Blogs Section -->
+    <section class="blogs-section-container">
+        <div class="blogs-section-content-container">
+            <div class="blogs-section-content-main-row-1">
+                <h1>Blogs 📝</h1>
+                <!-- <a href="#">View all -></a> -->
+                <div class="control-buttons">
+                    <button id="blogs-btn-left" class="blogs-btn">
+                        <ion-icon class="blogs-chevron-icon" name="arrow-back-circle-outline"></ion-icon>
+                    </button>
+                    <button id="blogs-btn-right" class="blogs-btn">
+                        <ion-icon class="blogs-chevron-icon" name="arrow-forward-circle-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="blogs-section-content-main-row-2">
+                <div class="blogs-section-carousel-container">
+                    <div class="blogs-section-carousel-content-container" id="blogs-section-carousel-content-container">  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					</div>
+    <!-- MARK: Contact -->
+    <section class="contact-section-container">
+        <div class="contact-section-content-container">
+            <div class="contact-section-col">
+                <img class="contact-us-bg-img" src="assets/svgs/stroke-svg-test.svg" alt="">
+                <h1>Get in</h1>
+                <h1>Touch</h1>
+                <br>
+                <p>Interested in knowing more about me? Let’s connect!</p>
+                <br>
+                <div class="contact-buttons-container">
+                    <a href="#" class="contact-social-btn">
+                        <img src="assets/social-logos/gmail-logo.png" alt="" srcset="">
+                    </a>
+                    <a href="#" class="contact-social-btn">
+                        <img src="assets/social-logos/linkedin-logo.png" alt="" srcset="">
+                    </a>
+                    <a href="#" class="contact-social-btn">
+                        <img src="assets/social-logos/twitter-logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <br>
+                <div class="contact-buttons-container">
+                    <a href="#" class="contact-social-btn">
+                        <img src="assets/social-logos/github-logo-white.png" alt="" srcset="">
+                    </a>
+                    <a href="#" class="contact-social-btn">
+                        <img src="assets/social-logos/hackerrank-logo.png" alt="" srcset="">
+                    </a>
+                    <a href="#" class="contact-social-btn">
+                        <img src="assets/social-logos/behance-logo.png" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+            <div class="contact-section-col">
+                <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/8a2k6QNzq0BHJvoxeA" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/parksandrec-parks-and-recreation-rec-s6e20-8a2k6QNzq0BHJvoxeA">via GIPHY</a></p>
+            </div>
+        </div>
+    </section>
 
-					<div id="div-2" style="display: none;" class="about-sect">
-						<p><b style="margin-bottom: 20px;"> Web Development: </b></p> 
-						<div style="display: flex; flex-wrap: wrap;">
-							<div class="skill">HTML</div> 
-							<div class="skill">CSS</div>
-							<div class="skill">Javascript</div>
-							<div class="skill">React</div>
-							<div class="skill">Redux</div>
-							<div class="skill">Node.js</div>
-							<div class="skill">Express</div>
-							<div class="skill">MongoDB</div>
-							<!-- <div class="skill">Express</div> -->
-						</div>	
+<!-- ION ICONS -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-						<p><b style="margin-bottom: 20px;"> Mobile Development: </b></p> 	
-						<div style="display: flex; flex-wrap: wrap;">
-							<div class="skill">Swift</div> 
-							<div class="skill">SwiftUI</div>
-							<div class="skill">CocoaPods</div>
-							<div class="skill">CoreData</div>
-							<div class="skill">Firebase</div>
-							<div class="skill">Flutter</div>
-						</div>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+<script src="./js/v2-js/gsap/gsap-config.js"></script>
 
-						<p><b style="margin-bottom: 20px; "> Programming Languages: </b></p> 	
-						<div style="display: flex; flex-wrap: wrap;">
-							<div class="skill">C</div> 
-							<div class="skill">C++</div> 
-							<div class="skill">Java</div> 
-							<div class="skill">Python</div> 
-						</div>
+<!-- CUSTO CSS -->
+<script src="js/v2-js/hero-typewriter.js"></script>
+<script src="js/v2-js/api-calls/get-dev-to-articles-api.js"></script>
 
-					</div>
-
-					<div id="div-3" style="display: none;" class="about-sect">
-						<ul>
-							<li><b style="color: #5944C7;">Piano:</b> I like playing relaxing piano pieces at times when I feel stressed. Currently, I'm trying to self-learn classical pieces like Satie Gymnopedie and Chopin Nocturne Op 9. </li>
-							<li><b style="color: #5944C7;">Rubiks Cube Speedsolving:</b> Trying to improve my personal best (1:13 minutes.) </li>
-							<li><b style="color: #5944C7;">Competitive Programming:</b> Practicing to become a 3 star coder on Codechef. </li>
-							<li><b style="color: #5944C7;">Graphic Design:</b> I am really passionate about graphic design. Also the head of our Graphic Design club at university.</li>
-						</ul>
-
-					</div>
-
-					<!-- <div id="trigger-2"></div> -->
-
-				</div>
-				<div class="col about-right-column">
-					<img
-						src="assets/me-working.JPG" 
-						alt="working-on-xcode"
-						width="350px"
-						style="border-radius: 10px;"
-					>
-					<div id="trigger-2"></div>
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-	<!-- ----------------------  PROJECTS SECTION ---------------------- -->
-	<section class="container projects">
-		<div id="projects">
-			<h1 style="display: flex; align-items: center;"> 
-				<ion-icon style="margin-right: 10px;" name="hammer-outline"></ion-icon> 
-				Projects
-			</h1>
-
-			<div class="row">
-				<!-- FIRECHAT -->
-				<div class="card">
-					<img 
-						src="/assets/mockup-firechat/Firechat-mockup.png" 
-						alt=""
-						width="100%"
-					>
-					<div class="card-desc">
-						<h2 style="color: #fe2c54;">Firechat</h2>
-						<h3>iOS</h3>
-						Firechat is a cloud based messaging service for iOS, which stores and fetches data from the Firebase servers. User authentication and Media storage are also being handled by Firebase.
-						<br> <br>
-						Github: <a href="https://github.com/subhronilsaha/Firechat">github.com/subhronilsaha/Firechat</a> 
-						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
-							<div class="skill">Swift 5</div>
-							<div class="skill">UIKit</div>
-							<div class="skill">Firebase</div>
-						</div>	
-					</div>
-				</div>
-
-				<!-- WWDC -->
-				<div class="card">
-					<img 
-						src="/assets/mockup-wwdc20/screen-1.png" 
-						alt=""
-						width="100%"
-					>
-					<div class="card-desc">
-						<h2 style="color: #192548;">Morse Code</h2>
-						<h3>Swift Playground</h3>
-						Morse Code is a Playground Book that teaches you morse code. I built it for WWDC 2020 Swift Student Challenge.  
-						<br> <br>
-						Github: <a href="https://github.com/subhronilsaha/wwdc20-submission">github.com/subhronilsaha/wwdc20-submission</a>
-						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
-							<div class="skill">Swift Playground</div>
-							<div class="skill">SwiftUI</div>
-						</div>	
-					</div>
-				</div>
-
-				<!-- Face Detect -->
-				<div class="card">
-					<img 
-						src="/assets/mockup-face-detect/screen-1.png" 
-						alt=""
-						width="100%"
-					>
-					<div class="card-desc">
-						<h2 style="color: #d19d0c;">Face Detect</h2>
-						<h3>Web</h3>
-						Face Detect is a web based face detection visualiser, using Clarif.ai face detection model API. Frontend is built with React, and authentication is handled using a Node/Express server and Postgres database. 
-						<br> <br>
-						Github: <a href="https://github.com/subhronilsaha/wwdc20-submission">github.com/subhronilsaha/wwdc20-submission</a>
-						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
-							<div class="skill">React</div>
-							<div class="skill">Node.js</div>
-							<div class="skill">Express</div>
-							<div class="skill">PostgreSQL</div>
-							<div class="skill">Clarif.ai</div>
-						</div>	
-					</div>
-				</div>
-
-				<!-- Treefam -->
-				<div class="card">
-					<img 
-						src="/assets/mockup-treefam/screen-1.png" 
-						alt=""
-						width="100%"
-					>
-					<div class="card-desc">
-						<h2 style="color: #127e3b;">TreeFam</h2>
-						<h3>Web</h3>
-						Treefam is a social network for nature lovers. Users plant trees, and get 'climate points', and compete with their friends. They also get to see where their friends are planting trees. Built during Ivy Hacks 2020 (Ivy League Hackathon).
-						<br> <br>
-						Github: <a href="https://github.com/subhronilsaha/ivyhacks-submission">github.com/subhronilsaha/ivyhacks-submission</a>
-						<div style="display: flex; flex-wrap: wrap; margin-top: 20px;">
-							<div class="skill">React</div>
-							<div class="skill">Firebase</div>
-							<div class="skill">Google Maps API</div>
-						</div>	
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<!-- ----------------------  RESUME ---------------------- -->
-	<section class="container resume">
-		<div id="resume">
-			<h1>Contact me for work related queries!</h1>
-			<div class="resume-col-1" >
-				<h4>Download my resume</h4>
-				<a href="https://drive.google.com/file/d/1_QxennZxwwPP8V7K8xWiKJpNilmNsCHq/view?usp=sharing">
-					<ion-icon 
-						name="document-outline"
-						style="color: white;">
-					</ion-icon>
-				</a> 
-			</div>
-			
-			<div class="resume-col-2" style="display: flex; flex-direction: column;">
-				<h4>Get in touch:</h4>
-				<div>
-					<a href="mailto:subhronilsaha26@gmail.com">
-						<ion-icon style="color:whitesmoke;" name="mail-outline"></ion-icon>
-					</a>
-
-					<a href="https://twitter.com/SubhronilSaha">
-						<ion-icon style="color:whitesmoke;" name="logo-twitter"></ion-icon>
-					</a>
-
-					<a href="https://linkedin.com/in/subhronil-saha">
-						<ion-icon style="color:whitesmoke;" name="logo-linkedin"></ion-icon>
-					</a>
-					
-					<a href="https://dev.to/subhronilsaha">
-						<img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Subhronil Saha's DEV Community Profile" height="30" width="30">
-					</a>
-				</div>	
-			</div>
-			
-
-		</div>
-	</section>
-
-	<!-- ----------------------  FOOTER ---------------------- -->
-	<div class="footer">
-		<p>Made with <ion-icon style="color:#fe2c54;" name="heart"></ion-icon> by Subhronil Saha</p>
-		<p>&#169 Subhronil Saha, 2020</p>
-	</div>
-
-
-	<!-- ---------------------- MOBILE NAVIGATION ---------------------- -->
-	<section id="mobile-menu">
-		<ul>
-			<li><a href="#trigger-1">About</a></li>
-			<li><a href="#trigger-2">Projects</a></li>
-			<li><a href="#resume">Resume</a></li>
-			<li><a href="https://dev.to/subhronilsaha">Blog</a></li>
-		</ul>
-	</section>
-
-	<!-- Hamburger Menu -->
-	<div class="hamburger" id="hamburger" onclick=hamburgerAnim()>
-		<span class="line" id="line1"></span>
-		<span class="line"></span>
-		<span class="line" id="line3"></span>
-	</div>
-
-	
-	<!-- ---------------------- SCRIPTS ---------------------- -->
-
-	<!-- jQUERY CDN -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-	<!-- GSAP -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>	<script src="js/animations/home-anim.js"></script>
-	<!-- HAMBURGER CLICK -->
-	<script src="js/animations/hamburger.js"></script>
-	<!-- Sticky navigation bar -->
-	<script src="js/stickyNav.js"></script>
-	<script src="js/cursor.js"></script>
-	<!-- Custom Javascript -->
-	<script src="js/animations/about-anim.js"></script>
-	<!-- Preloader -->
-	<script>
-		$(window).on('load', function() {
-			$('.loader-container').fadeOut(1000);
-		})
-	</script>
+<script src="./js/v2-js/slider-effects/slider-controls.js"></script>
 </body>
 </html>
