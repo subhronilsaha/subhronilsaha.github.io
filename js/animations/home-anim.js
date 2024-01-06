@@ -39,15 +39,15 @@ tl1.from('.intro-text', 1, {y: 100, opacity: 0});
 tl1.staggerFrom('.hero .social-icon', 1, {y: 100, opacity: 0}, 0.2);
 
 tl2
-.from(".about-left-column", {y: 100, opacity: 0, duration: 1})
-.from(".about-right-column", {y: 100, opacity: 0, duration: 2}, "-=1");
+.from(".about-left-column", {y: 100, opacity: 0, duration: 0.5})
+.from(".about-right-column", {y: 100, opacity: 0, duration: 1}, "-=1");
 
 tl3
-.from(".projects h1", {y: 100, opacity: 0, duration: 1})
+.from(".projects h1", {y: 100, opacity: 0, duration: 0.5})
 .from(".card", {opacity: 0, duration: 0.1})
 
 tl4
-.from(".resume h1", {y: 100, opacity: 0, duration: 1})
+.from(".resume h1", {y: 100, opacity: 0, duration: 0.5})
 .from(".resume a", {opacity: 0, duration: 1})
 
 
